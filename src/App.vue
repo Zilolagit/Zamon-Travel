@@ -1,0 +1,2083 @@
+<template>
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-lg-3 d-flex align-items-center">
+          <div class="header__logo">
+            <a href="/">
+              <img src="../public/logo.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center">
+          <ul class="header__list">
+            <li class="header__item header__item-active">
+              <a href="/">Home</a>
+            </li>
+            <li class="header__item"><a href="#about">About</a></li>
+            <li class="header__item"><a href="#tour">Tours</a></li>
+            <li class="header__item"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 d-none d-lg-flex justify-content-end" style="gap: 25px">
+          <ul class="header__lang">
+            <li><a href="#">UZ</a></li>
+            <li><a href="#">ENG</a></li>
+            <li><a href="#">RU</a></li>
+          </ul>
+          <ul class="header__social">
+            <li>
+              <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center d-lg-none">
+          <div class="header__bars" @click="openMenu">
+            <div class="header__bar header__bar-first"></div>
+            <div class="header__bar header__bar-second"></div>
+            <div class="header__bar header__bar-third"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile" v-if="isOpen">
+        <ul class="header__menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#">UZ</a></li>
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">RU</a></li>
+          <li>
+            <a href="#"><i class="fa-brands fa-telegram"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Hero Start -->
+  <section class="hero">
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
+      <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade">
+        <div class="carousel-indicators">
+          <div class="hero__indicate">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <p>1</p>
+          </div>
+          <div class="hero__indicate">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <p>2</p>
+          </div>
+          <div class="hero__indicate">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <p>3</p>
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active"
+            style="background-image: url(https://zamontour.uz/assets/images/istanbul.jpg);" data-bs-interval="1000">
+            <div>
+              <div class="container text-center">
+                <h2>Take a Glimpse Into The Beautiful City Of:</h2>
+                <h1>Istanbul</h1>
+                <div class="hero__btn">
+                  <button class="button">Go There</button>
+                </div>
+                <div class="hero__card">
+                  <div class="row">
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>Population:</p>
+                        <h4>8.66 M</h4>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-globe"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>Territory:</p>
+                        <h4>513.120 KM2</h4>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-house"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>AVG Price:</p>
+                        <h4>$165.450</h4>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
+                      <button class="button button-opacity">Explain More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000"
+            style="background-image: url(https://zamontour.uz/assets/images/sharm.jpg);">
+            <div>
+              <div class="container text-center">
+                <h2>Take a Glimpse Into The Beautiful City Of:</h2>
+                <h1>Sharm El-Sheikh</h1>
+                <div class="hero__btn">
+                  <button class="button">Go There</button>
+                </div>
+                <div class="hero__card">
+                  <div class="row">
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>Population:</p>
+                        <h4>8.66 M</h4>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-globe"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>Territory:</p>
+                        <h4>513.120 KM2</h4>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-house"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>AVG Price:</p>
+                        <h4>$165.450</h4>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
+                      <button class="button button-opacity">Explain More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item text-center"
+            style="background-image: url(https://exolands.com/wp-content/uploads/2021/03/burj-al-arab-5919133_1920.jpg);">
+            <div>
+              <div class="container text-center">
+                <h2>Take a Glimpse Into The Beautiful City Of:</h2>
+                <h1>Dubai</h1>
+                <div class="hero__btn">
+                  <button class="button">Go There</button>
+                </div>
+                <div class="hero__card">
+                  <div class="row">
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>Population:</p>
+                        <h4>8.66 M</h4>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-globe"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>Territory:</p>
+                        <h4>513.120 KM2</h4>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                      <div class="hero__icon">
+                        <i class="fa-solid fa-house"></i>
+                      </div>
+                      <div class="hero__box">
+                        <p>AVG Price:</p>
+                        <h4>$165.450</h4>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
+                      <button class="button button-opacity">Explain More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Offer Start -->
+  <section class="offer">
+    <div class="container">
+      <h2>Best Weekly Offers In Each City</h2>
+      <p>Discover the best weekly offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.</p>
+      <swiper
+      :slidesPerView="3"
+      :spaceBetween="30"
+      :navigation="true"
+      :modules="modules"
+      :autoplay="{
+      delay: 10,
+      disableOnInteraction: false,}"
+      class="mySwiper"
+    >
+      <swiper-slide>
+        <img src="../public/bg-1.jpg" alt="bg-1">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>USA</h4>
+            <h3>$450</h3>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Deal Includes:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-car"></i>
+            <span>5 Days trip > Hotel Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-plane"></i>
+            <span>Airplane Bill Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-building"></i>
+            <span>Daily Places Visit  </span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-2.jpg" alt="bg-2">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>England</h4>
+            <h3>$550</h3>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>205 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Deal Includes:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-car"></i>
+            <span>5 Days trip > Hotel Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-plane"></i>
+            <span>Airplane Bill Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-building"></i>
+            <span>Daily Places Visit  </span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-3.jpg" alt="bg-3">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>Canada</h4>
+            <h3>$850</h3>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Deal Includes:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-car"></i>
+            <span>5 Days trip > Hotel Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-plane"></i>
+            <span>Airplane Bill Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-building"></i>
+            <span>Daily Places Visit  </span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-4.jpg" alt="bg-4">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>USA</h4>
+            <h3>$450</h3>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Deal Includes:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-car"></i>
+            <span>5 Days trip > Hotel Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-plane"></i>
+            <span>Airplane Bill Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-building"></i>
+            <span>Daily Places Visit  </span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-5.jpg" alt="bg-5">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>Turkey</h4>
+            <h3>$250</h3>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Deal Includes:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-car"></i>
+            <span>5 Days trip > Hotel Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-plane"></i>
+            <span>Airplane Bill Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-building"></i>
+            <span>Daily Places Visit  </span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-6.jpg" alt="bg-6">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>Europian Union</h4>
+            <h3>$980</h3>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>405 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Deal Includes:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-car"></i>
+            <span>5 Days trip > Hotel Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-plane"></i>
+            <span>Airplane Bill Included</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-building"></i>
+            <span>Daily Places Visit  </span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+    </swiper>
+    </div>
+  </section>
+  <!-- Offer End -->
+
+  <!-- Visa Start -->
+  <section class="visa">
+    <div class="container">
+      <h2>Visa Support</h2>
+      <p>Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey.</p>
+      <swiper
+      :slidesPerView="3"
+      :spaceBetween="30"
+      :navigation="true"
+      :modules="modules"
+      :autoplay="{
+      delay: 10,
+      disableOnInteraction: false,}"
+      class="mySwiper"
+    >
+      <swiper-slide>
+        <img src="../public/bg-1.jpg" alt="bg-1">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>USA</h4>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-tags"></i>
+            <span>Best Prices</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-clock"></i>
+            <span>Short Processing Time</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-check"></i>
+            <span>Trustworthy Assistance</span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-2.jpg" alt="bg-2">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>England</h4>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>205 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-tags"></i>
+            <span>Best Prices</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-clock"></i>
+            <span>Short Processing Time</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-check"></i>
+            <span>Trustworthy Assistance</span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-3.jpg" alt="bg-3">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>Canada</h4>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-tags"></i>
+            <span>Best Prices</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-clock"></i>
+            <span>Short Processing Time</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-check"></i>
+            <span>Trustworthy Assistance</span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-4.jpg" alt="bg-4">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>USA</h4>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-tags"></i>
+            <span>Best Prices</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-clock"></i>
+            <span>Short Processing Time</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-check"></i>
+            <span>Trustworthy Assistance</span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-5.jpg" alt="bg-5">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>Turkey</h4>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>200 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-tags"></i>
+            <span>Best Prices</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-clock"></i>
+            <span>Short Processing Time</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-check"></i>
+            <span>Trustworthy Assistance</span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../public/bg-6.jpg" alt="bg-6">
+        <div class="offer__card">
+          <div class="offer__top">
+            <h4>Europian Union</h4>
+          </div>
+          <div class="offer__icon offer__list">
+            <i class="fa-solid fa-users"></i>
+            <span>405 Check Ins / person</span>
+          </div>
+          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+          <div class="offer__icon">
+            <i class="fa-solid fa-tags"></i>
+            <span>Best Prices</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-clock"></i>
+            <span>Short Processing Time</span>
+          </div>
+          <div class="offer__icon">
+            <i class="fa-solid fa-check"></i>
+            <span>Trustworthy Assistance</span>
+          </div>
+          <button class="button button-opacity">Make A Reservation</button>
+        </div>
+      </swiper-slide>
+    </swiper>
+    </div>
+  </section>
+  <!-- Visa End -->
+
+  <!-- Explore Start -->
+  <section id="about" class="explore">
+    <div class="container">
+      <h3 class="explore__title">Explore Destinations With Ease</h3>
+      <p class="explore__desc">Find the best deals on railway and airplane tickets in each city, carefully selected for
+        you.</p>
+      <div class="row">
+        <div class="col-xl-10">
+          <div class="box">
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="box__image">
+                  <img src="../public/train.jpg" alt="train">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="box__title">
+                      <h5>Cheap Railway Tickets With Us</h5>
+                    </div>
+                    <div class="box__desc">
+                      <p>Whole world</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-flex justify-content-end">
+                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                  </div>
+                  <div class="box__info">
+                    <p>Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque
+                      landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable
+                      way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible
+                      through our extensive railway network. .</p>
+                  </div>
+                  <div class="box__btn mt-2 mt-sm-3 d-md-none"><button class="button button-opacity">Explore
+                      More</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box mt-4">
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="box__image">
+                  <img src="../public/plame.jpg" alt="train">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="box__title">
+                      <h5>Discover Exciting Air Travel Deals</h5>
+                    </div>
+                    <div class="box__desc">
+                      <p>Global Destinations</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-flex justify-content-end">
+                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                  </div>
+                  <div class="box__info">
+                    <p>Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque
+                      landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable
+                      way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible
+                      through our extensive railway network. .</p>
+                  </div>
+                  <div class="box__btn mt-2 mt-sm-3 d-md-none"><button class="button button-opacity">Explore
+                      More</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Explore End -->
+
+  <!-- Country Start -->
+  <section class="country mt-4 pb-5">
+    <div class="container">
+      <h3 class="explore__title">Visit One Of Our Countries Now</h3>
+      <p class="explore__desc">Discover the best offers in each city, curated just for you. Immerse yourself in a world
+        of savings and indulge in unparalleled experiences.</p>
+      <div class="row">
+        <div class="col-xl-10">
+          <div class="box">
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="box__image">
+                  <img src="../public/dubay.jpg" alt="train">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="box__title">
+                      <h5>Dubai</h5>
+                    </div>
+                    <div class="box__desc">
+                      <p>United Arab Emirated</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-flex justify-content-end">
+                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                  </div>
+                  <div class="box__info">
+                    <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern
+                      architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the
+                      skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to
+                      music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and
+                      marine-animal parks.</p>
+                  </div>
+                  <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
+                    <li>
+                      <i class="fa-solid fa-user"></i>
+                      <span> 8.66 Mil People</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-globe"></i>
+                      <span> 41.290 km2</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-house"></i>
+                      <span> $1.100.200</span>
+                    </li>
+                  </ul>
+                  <div class="box__link">
+                    <a href="#">Need Directions</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box mt-5">
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="box__image">
+                  <img src="../public/antalya.jpg" alt="antalya">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="box__title">
+                      <h5>Antalya</h5>
+                    </div>
+                    <div class="box__desc">
+                      <p>Turkey</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-flex justify-content-end">
+                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                  </div>
+                  <div class="box__info">
+                    <p>Antalya is the fastest-growing city in Turkey, and tourists from around the world are discovering
+                      its fabulous mix of great beaches and traditional Turkish culture. Kids will love the Beach Park,
+                      which features Aqua Land (a waterslide-fanatic's dream) and Dolphin Land (home to dolphins, sea
+                      lions and white whales). Make sure to explore the old town center and to see Hadrian's Gate.</p>
+                  </div>
+                  <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
+                    <li>
+                      <i class="fa-solid fa-user"></i>
+                      <span> 8.66 Mil People</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-globe"></i>
+                      <span> 41.290 km2</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-house"></i>
+                      <span> $1.100.200</span>
+                    </li>
+                  </ul>
+                  <div class="box__link">
+                    <a href="#">Need Directions</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box mt-5">
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0 ">
+                <div class="box__image">
+                  <img src="../public/egypt.jpg" alt="egypt">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="box__title">
+                      <h5>Sharm El-Sheikh</h5>
+                    </div>
+                    <div class="box__desc">
+                      <p>Egypt</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-flex justify-content-end">
+                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                  </div>
+                  <div class="box__info">
+                    <p>Sharm El Sheikh is the center of tourism action in Sinai Peninsula and it has the world top
+                      diving sites. Specially the underwater wonders of Ras Mohammed national park that took Sharm city
+                      to whole different level. The city has diving and shipwreck sites that attract both advanced and
+                      recreational divers from around the world to discover the un parallel marine life deep down the
+                      red sea.</p>
+                  </div>
+                  <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
+                    <li>
+                      <i class="fa-solid fa-user"></i>
+                      <span> 67.41 Mil People</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-globe"></i>
+                      <span> 551.500 km2</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-house"></i>
+                      <span> $425.600</span>
+                    </li>
+                  </ul>
+                  <div class="box__link">
+                    <a href="#">Need Directions</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box mt-5">
+            <div class="row">
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="box__image">
+                  <img src="../public/istanbul.jpg" alt="istanbul">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="box__title">
+                      <h5>Istanbul</h5>
+                    </div>
+                    <div class="box__desc">
+                      <p>Turkey</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-flex justify-content-end">
+                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                  </div>
+                  <div class="box__info">
+                    <p>Istanbul is the most populous city in Turkey and its cultural, economic and historic center. It
+                      is located in north-western part of Turkey, divided into European and Asian side by Bosphorus,
+                      which connects the Sea of Marmara and Black Sea. It is the only city in the world that sits on two
+                      continents.</p>
+                  </div>
+                  <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
+                    <li>
+                      <i class="fa-solid fa-user"></i>
+                      <span> 67.41 Mil People</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-globe"></i>
+                      <span> 551.500 km2</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-house"></i>
+                      <span> $425.600</span>
+                    </li>
+                  </ul>
+                  <div class="box__link">
+                    <a href="#">Need Directions</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Country End -->
+
+  <!-- Reservation Start -->
+  <section class="reservation">
+    <div class="container">
+      <h4>Book Prefered Deal Here </h4>
+      <div class="hr"></div>
+      <h2>Make Your Reservation</h2>
+      <div class="reservation__btn" style="padding-bottom: 30px;">
+        <button class="button button-white">Discover More</button>
+      </div>
+      <div class="row reservation__row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="iconbox">
+            <div class="iconbox__icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h4>Make a Phone Call</h4>
+            <a href="tel:+998943939999">+998 99 299 99 96</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="iconbox">
+            <div class="iconbox__icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h4>Contact Us via Email</h4>
+            <a href="mailto:zamonbiznestour@mail.ru">zamonbiznestour@mail.ru</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+          <div class="iconbox">
+            <div class="iconbox__icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h4>Visit Our Offices</h4>
+            <a href="#">15/25, Chilanzar - 9, Tashkent city</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Reservation End -->
+
+  <!-- Contact Start -->
+  <section class="contact" id="contacts" style="padding-top: 100px; padding-bottom: 100px;">
+    <div class="container">
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5425.747982123416!2d69.201104!3d41.290949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae89a274fdb9b7%3A0x2b8bc58608ca7fb2!2sChilanzar-25%2C%20100152%2C%20Tashkent%2C%20Tashkent%20Region%2C%20Uzbekistan!5e1!3m2!1sen!2sus!4v1716135766484!5m2!1sen!2sus"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact__box">
+          <h2 class="text-center mb-3">Make Your <span style="color: #22B3C1;">Reservation</span> Through This <span
+              style="color: #22B3C1;">Form</span> </h2>
+          <form>
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4">
+                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
+                  placeholder="Ex. Johm Smithee" required>
+              </div>
+              <div class="col-12 col-md-6 mb-4">
+                <label for="exampleFormControlInput2" class="form-label">Your Phone Number</label>
+                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput2"
+                  placeholder="Ex. +998 91 456 37 73" required>
+              </div>
+              <div class="col-12 col-md-6 mt-1 mb-4">
+                <label for="exampleFormControlInput3" class="form-label">Number Of Guests</label>
+                <select class="form-select" aria-label="Default select example" id="exampleFormControlInput3" required>
+                  <option selected disabled value="">ex. 3 or 4 or 5</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4+</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6 mt-1 mb-4">
+                <label for="exampleFormControlInput4" class="form-label">Check In Date</label>
+                <input type="date"  class="form-control form-control-lg">
+              </div>
+              <div class="col-12 mt-1 mb-4">
+                <label for="exampleFormControlInput5" class="form-label">Choose Your Destination</label>
+                <select class="form-select form-select-lg" aria-label="Default select example" id="exampleFormControlInput5" required>
+                  <option value="Antalya" selected>Antalya</option>
+                  <option value="Istanbul">Istanbul</option>
+                  <option value="Dubai">Dubai</option>
+                  <option value="Sharm El-Sheikh">Sharm El-Sheikh</option>
+                  <option value="Kuala Lumpur">Kuala Lumpur</option>
+                  <option value="Canada">Canada</option>
+                  <option value="England">England</option>
+                </select>
+              </div>
+              <div class="col-12 mt-1 mb-4">
+                <label for="exampleFormControlInput6" class="form-label">Choose Your Visa Support</label>
+                <select class="form-select form-select-lg" aria-label="Default select example" id="exampleFormControlInput6" required>
+                  <option value="" selected disabled>Country</option>
+                  <option value="USA">USA</option>
+                  <option value="Europe">Europe</option>
+                  <option value="England">England</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="India">India</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                </select>
+              </div>
+              <div class="d-grid mt-3">
+                <button class="button button-opacity">Make Your Reservation Now</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact End -->
+
+  <!-- Footer Start -->
+  <footer class="footer" style="background-image: url(../public/footerBg.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 text-center text-md-start">
+          <h2>ARE YOU LOOKING TO TRAVEL ?</h2>
+          <h5>Make A Reservation By Clicking The Button</h5>
+        </div>
+        <div class="col-12 col-md-4 mt-4 mt-md-0 d-flex justify-content-center justify-content-md-end align-items-center">
+          <button class="button button-border">Book Your Now</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copy" style="padding-top: 25px; padding-bottom: 25px; background-color: #22B3C1;">
+    <div class="container text-center">
+      <p style="padding: 0; margin: 0;">Copyright © 2024 Zamon Business Tour. All rights reserved. </p>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+
+
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const isOpen = ref(false);
+
+function openMenu() {
+  document.querySelector(".header__bars").classList.toggle("header__rotate");
+  isOpen.value = !isOpen.value;
+}
+</script>
+
+<script>
+ import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+// import required modules
+import { Navigation } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Navigation],
+    };
+  },
+};
+</script>
+
+
+<style lang="scss">
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  background-color: #22B3C1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 35px;
+  font-weight: 500;
+  transition: all .3s ease;
+
+  &:hover {
+    color: #22B3C1 !important;
+    background-color: #fff;
+  }
+}
+
+.button-opacity {
+  &:hover {
+    background-color: #22b4c1ca;
+    color: #fff !important;
+  }
+}
+
+.button-white {
+  background-color: #fff;
+  color: #22B3C1;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: #22B3C1;
+    color: #fff !important;
+  }
+}
+
+.button-border {
+  border: 1px solid #fff;
+}
+
+/* Header Styles */
+.header {
+  background-color: #22b3c1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: sticky;
+
+  &__logo {
+    width: 159px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__item {
+    transition: all 0.2s ease;
+
+    &-active {
+      position: relative;
+
+      &::before {
+        background-color: #fff;
+        left: 0px;
+        top: -6px;
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        transition: all 0.2s ease;
+      }
+
+      &:hover &::before {
+        opacity: 0.7;
+      }
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &__lang,
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &__lang {
+    li {
+      a {
+        transition: all 0.3s ease;
+      }
+
+      &:hover a {
+        color: #000;
+      }
+    }
+  }
+
+  &__social {
+    i {
+      font-size: 18px;
+    }
+  }
+
+  &__bars {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__bar {
+    width: 35px;
+    height: 2.5px;
+    background-color: #fff;
+    margin: 7px 0;
+    transition: 0.4s;
+
+    &-first,
+    &-third {
+      width: 25px;
+    }
+  }
+
+  &__rotate {
+    .header__bar {
+      &-first {
+        width: 30px;
+        transform: translate(0px, 9px) rotate(-45deg);
+      }
+
+      &-second {
+        opacity: 0;
+      }
+
+      &-third {
+        width: 30px;
+        transform: translate(0px, -10px) rotate(45deg);
+      }
+    }
+  }
+
+  &__mobile {
+    position: absolute;
+    z-index: 999999;
+    top: 66px;
+    padding: 20px 0;
+    left: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+  }
+
+  &__menu {
+    li {
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+
+      i {
+        font-size: 18px;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0px;
+      }
+
+      a {
+        color: #000;
+      }
+
+      &:first-child {
+        a {
+          color: #22b3c1;
+        }
+      }
+    }
+  }
+}
+
+/* Hero Styles */
+
+.hero {
+  &__card {
+    background-color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 110px;
+  }
+
+  &__box {
+    text-align: left;
+
+    p {
+      color: #afafaf !important;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      color: #22B3C1 !important;
+      font-size: 21px;
+      font-weight: 700;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #22B3C1;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+
+    i {
+      font-size: 24px;
+      color: #22B3C1 !important;
+    }
+  }
+
+  &__indicate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+  }
+
+  .carousel-item {
+    padding-top: 70px;
+    position: relative;
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    * {
+      z-index: 999;
+      color: #fff;
+    }
+
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      top: 0px;
+      left: 0px;
+      position: absolute;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 55px;
+    }
+
+    &>div {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .carousel-indicators {
+    gap: 20px;
+
+    button {
+      width: 180px;
+      background-color: #fff;
+    }
+  }
+
+  &__btn {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+}
+
+/* Offer Styles */
+
+.offer {
+  padding-top: 80px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  
+  .swiper-wrapper {
+    padding-bottom: 180px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #22B3C1;
+    color: #22B3C1;
+    transition: all .3s ease;
+    &:hover {
+      background-color: #22B3C1;
+      color: #fff;
+    }
+  }
+  .swiper-button-next {
+    transform: translateY(200px) translateX(-580px);
+  }
+  .swiper-button-prev {
+    transform: translateY(200px) translateX(560px);
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 25px;
+  }
+  .swiper-slide {
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    button {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+    img {
+      width: 70%;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+      border-top-left-radius: 23px;
+      border-bottom-left-radius: 23px;
+    }
+  }
+  h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #afafaf;
+    max-width: 630px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  &__card {
+    text-align: left;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 23px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-45%);
+    border: 1px solid #eee;
+    padding: 25px;
+    width: 280px;
+    h4 {
+      font-weight: 700;
+      font-size: 23px;
+    }
+    h6 {
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-weight: 500;
+    }
+
+  }
+  &__list {
+    padding-bottom: 10px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    h3 {
+      font-weight: 700;
+      color: #22b3c1;
+      font-size: 20px;
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    span,i {
+      font-size: 15px;
+      color: #afafaf;
+    }
+  }
+}
+
+/* Vosa Styles */
+.visa {
+  padding-top: 80px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  
+  .swiper-wrapper {
+    padding-bottom: 180px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #22B3C1;
+    color: #22B3C1;
+    transition: all .3s ease;
+    &:hover {
+      background-color: #22B3C1;
+      color: #fff;
+    }
+  }
+  .swiper-button-next {
+    transform: translateY(200px) translateX(-580px);
+  }
+  .swiper-button-prev {
+    transform: translateY(200px) translateX(560px);
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 25px;
+  }
+  .swiper-slide {
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    button {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+    img {
+      width: 70%;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+      border-top-left-radius: 23px;
+      border-bottom-left-radius: 23px;
+    }
+  }
+  h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #afafaf;
+    max-width: 630px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  &__card {
+    text-align: left;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 23px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-45%);
+    border: 1px solid #eee;
+    padding: 25px;
+    width: 280px;
+    h4 {
+      font-weight: 700;
+      font-size: 23px;
+    }
+    h6 {
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-weight: 500;
+    }
+
+  }
+  &__list {
+    padding-bottom: 10px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    h3 {
+      font-weight: 700;
+      color: #22b3c1;
+      font-size: 20px;
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    span,i {
+      font-size: 15px;
+      color: #afafaf;
+    }
+  }
+}
+
+/* Explore Styles */
+
+.explore {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    color: #afafaf;
+    max-width: 560px;
+    margin-bottom: 60px;
+    line-height: 2;
+  }
+}
+
+/* Contact Styles */
+.contact {
+  &__map {
+    margin-top: 80px;
+    background-color: #F9F9F9;
+    border-radius: 23px;
+    overflow: hidden;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    padding: 50px 100px;
+
+    h2 {
+      font-weight: 700;
+    }
+  }
+
+  form {
+    padding-top: 40px;
+
+    label {
+      color: #afafaf;
+      margin-bottom: 15px;
+    }
+
+    input {
+      border-radius: 50px;
+      font-size: 17px;
+    }
+    select {
+      border-radius: 50px;
+      font-size: 17px;
+    }
+  }
+}
+
+/* Box Styles */
+
+.box {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__image {
+    img {
+      border-radius: 23px;
+    }
+  }
+
+  &__title {
+    h5 {
+      font-weight: 700;
+    }
+  }
+
+  &__desc,
+  &__info {
+    p {
+      color: #afafaf;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+
+  &__list {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    li {
+      color: #afafaf;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    gap: 10px;
+
+    a {
+      font-weight: 500;
+      color: #22b3c1;
+      transition: all .3s ease;
+    }
+
+    i {
+      color: #22b3c1;
+      transition: all .3s ease;
+    }
+
+    &:hover i {
+      margin-left: 10px;
+    }
+  }
+
+}
+
+/* Reservation Styles */
+.reservation {
+  padding-top: 250px;
+  background-image: url(../public/reservation.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  h4,
+  h2 {
+    color: #fff;
+  }
+
+  .hr {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100px;
+    border: 1px solid rgba(250, 250, 250, 0.3);
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  &__row {
+    @media (min-width: 992px) {
+      transform: translateY(50%);
+    }
+  }
+}
+
+/* iconbox styles */
+.iconbox {
+  background-color: #fff;
+  border-radius: 23px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 30px;
+
+  &__icon {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    i {
+      font-size: 20px;
+      color: #22B3C1;
+    }
+  }
+
+  h4 {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #22B3C1;
+  }
+}
+
+/* Footer Styles */
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  h5 {
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.copy {
+  p {
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+
+/* Media Styles */
+
+@media (max-width: 1400px) {
+  .offer {
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(466px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-500px) !important;
+    }
+  }
+  .visa {
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(466px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-500px) !important;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .offer {
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(400px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-366px) !important;
+    }
+  }
+  .visa {
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(400px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-366px) !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .reservation {
+    padding-top: 150px;
+    padding-bottom: 90px;
+
+    button {
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+  }
+  .contact {
+    &__box {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .offer {
+    .swiper-slide {
+      width: 46% !important;
+    }
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(270px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-276px) !important;
+    }
+  }
+  .visa {
+    .swiper-slide {
+      width: 46% !important;
+    }
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(270px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-276px) !important;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    .carousel-indicators {
+      button {
+        width: 100px;
+      }
+    }
+
+    .carousel-item {
+      height: auto;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: -20px;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .offer {
+    padding-bottom: 0;
+    .swiper-slide {
+      width: 100% !important;
+    }
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(170px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-190px) !important;
+    }
+  }
+  .visa {
+    padding-bottom: 0;
+    .swiper-slide {
+      width: 100% !important;
+    }
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(170px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-190px) !important;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .reservation {
+    padding-top: 80px;
+    h2 {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .hero {
+    .carousel-indicators {
+      button {
+        width: 60px;
+      }
+    }
+
+    .col-6 {
+      gap: 10px !important;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .carousel-item {
+      h2 {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    &__icon {
+      i {
+
+        font-size: 20px;
+      }
+
+      padding: 0;
+      border: none;
+    }
+
+    &__box {
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .box {
+    &__list {
+      flex-direction: column;
+      align-items: baseline;
+      gap: 10px;
+      margin: 0px;
+    }
+  }
+  .contact {
+    padding-top: 0px !important;
+    iframe {
+      height: 300px;
+    }
+  }
+  .footer {
+    h2 {
+      font-size: 25px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .offer {
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(80px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-90px) !important;
+    }
+  }
+  .visa {
+    .swiper-button-prev {
+      transform: translateY(200px) translateX(80px) !important;
+    }
+    .swiper-button-next {
+      transform: translateY(200px) translateX(-90px) !important;
+    }
+  }
+}
+</style>
