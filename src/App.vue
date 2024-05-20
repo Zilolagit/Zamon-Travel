@@ -1,5 +1,4 @@
 <template>
-
   <!-- Header Start -->
   <header class="header">
     <div class="container">
@@ -11,7 +10,9 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center">
+        <div
+          class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center"
+        >
           <ul class="header__list">
             <li class="header__item header__item-active">
               <a href="/">Home</a>
@@ -21,7 +22,10 @@
             <li class="header__item"><a href="#contacts">Contacts</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 d-none d-lg-flex justify-content-end" style="gap: 25px">
+        <div
+          class="col-lg-3 d-none d-lg-flex justify-content-end"
+          style="gap: 25px"
+        >
           <ul class="header__lang">
             <li><a href="#">UZ</a></li>
             <li><a href="#">ENG</a></li>
@@ -36,7 +40,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-6 d-flex justify-content-end align-items-center d-lg-none">
+        <div
+          class="col-6 d-flex justify-content-end align-items-center d-lg-none"
+        >
           <div class="header__bars" @click="openMenu">
             <div class="header__bar header__bar-first"></div>
             <div class="header__bar header__bar-second"></div>
@@ -67,38 +73,65 @@
 
   <!-- Hero Start -->
   <section class="hero">
-    <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
-      <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade">
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark carousel-fade"
+      >
         <div class="carousel-indicators">
           <div class="hero__indicate">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
             <p>1</p>
           </div>
           <div class="hero__indicate">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
             <p>2</p>
           </div>
           <div class="hero__indicate">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
             <p>3</p>
           </div>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active"
-            style="background-image: url(https://zamontour.uz/assets/images/istanbul.jpg);" data-bs-interval="1000">
+          <div
+            class="carousel-item active"
+            style="
+              background-image: url(https://zamontour.uz/assets/images/istanbul.jpg);
+            "
+            data-bs-interval="1000"
+          >
             <div>
               <div class="container text-center">
                 <h2>Take a Glimpse Into The Beautiful City Of:</h2>
                 <h1>Istanbul</h1>
                 <div class="hero__btn">
-                  <button class="button">Go There</button>
+                  <a href="#contacts"
+                    ><button class="button">Go There</button></a
+                  >
                 </div>
                 <div class="hero__card">
                   <div class="row">
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-user"></i>
                       </div>
@@ -107,7 +140,10 @@
                         <h4>8.66 M</h4>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-globe"></i>
                       </div>
@@ -116,7 +152,10 @@
                         <h4>513.120 KM2</h4>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-house"></i>
                       </div>
@@ -126,26 +165,41 @@
                       </div>
                     </div>
                     <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
-                      <button class="button button-opacity">Explain More</button>
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center"
+                    >
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explain More
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000"
-            style="background-image: url(https://zamontour.uz/assets/images/sharm.jpg);">
+          <div
+            class="carousel-item"
+            data-bs-interval="2000"
+            style="
+              background-image: url(https://zamontour.uz/assets/images/sharm.jpg);
+            "
+          >
             <div>
               <div class="container text-center">
                 <h2>Take a Glimpse Into The Beautiful City Of:</h2>
                 <h1>Sharm El-Sheikh</h1>
                 <div class="hero__btn">
-                  <button class="button">Go There</button>
+                  <a href="#contacts"
+                    ><button class="button">Go There</button></a
+                  >
                 </div>
                 <div class="hero__card">
                   <div class="row">
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-user"></i>
                       </div>
@@ -154,7 +208,10 @@
                         <h4>8.66 M</h4>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-globe"></i>
                       </div>
@@ -163,7 +220,10 @@
                         <h4>513.120 KM2</h4>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-house"></i>
                       </div>
@@ -173,26 +233,40 @@
                       </div>
                     </div>
                     <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
-                      <button class="button button-opacity">Explain More</button>
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center"
+                    >
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explain More
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item text-center"
-            style="background-image: url(https://exolands.com/wp-content/uploads/2021/03/burj-al-arab-5919133_1920.jpg);">
+          <div
+            class="carousel-item text-center"
+            style="
+              background-image: url(https://exolands.com/wp-content/uploads/2021/03/burj-al-arab-5919133_1920.jpg);
+            "
+          >
             <div>
               <div class="container text-center">
                 <h2>Take a Glimpse Into The Beautiful City Of:</h2>
                 <h1>Dubai</h1>
                 <div class="hero__btn">
-                  <button class="button">Go There</button>
+                  <a href="#contacts"
+                    ><button class="button">Go There</button></a
+                  >
                 </div>
                 <div class="hero__card">
                   <div class="row">
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-user"></i>
                       </div>
@@ -201,7 +275,10 @@
                         <h4>8.66 M</h4>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-globe"></i>
                       </div>
@@ -210,7 +287,10 @@
                         <h4>513.120 KM2</h4>
                       </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px;">
+                    <div
+                      class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center"
+                      style="gap: 20px"
+                    >
                       <div class="hero__icon">
                         <i class="fa-solid fa-house"></i>
                       </div>
@@ -220,8 +300,13 @@
                       </div>
                     </div>
                     <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
-                      <button class="button button-opacity">Explain More</button>
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center"
+                    >
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explain More
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -235,183 +320,200 @@
   <!-- Hero End -->
 
   <!-- Offer Start -->
-  <section class="offer">
+  <section class="offer" id="tour">
     <div class="container">
       <h2>Best Weekly Offers In Each City</h2>
-      <p>Discover the best weekly offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.</p>
+      <p>
+        Discover the best weekly offers in each city, curated just for you.
+        Immerse yourself in a world of savings and indulge in unparalleled
+        experiences.
+      </p>
       <swiper
-      :slidesPerView="3"
-      :spaceBetween="30"
-      :navigation="true"
-      :modules="modules"
-      :autoplay="{
-      delay: 10,
-      disableOnInteraction: false,}"
-      class="mySwiper"
-    >
-      <swiper-slide>
-        <img src="../public/bg-1.jpg" alt="bg-1">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>USA</h4>
-            <h3>$450</h3>
+        :slidesPerView="3"
+        :spaceBetween="30"
+        :navigation="true"
+        :modules="modules"
+        :autoplay="{
+          delay: 10,
+          disableOnInteraction: false,
+        }"
+        class="mySwiper"
+      >
+        <swiper-slide>
+          <img src="../public/bg-1.jpg" alt="bg-1" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>USA</h4>
+              <h3>$450</h3>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-car"></i>
+              <span>5 Days trip > Hotel Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-plane"></i>
+              <span>Airplane Bill Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-building"></i>
+              <span>Daily Places Visit </span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-2.jpg" alt="bg-2" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>England</h4>
+              <h3>$550</h3>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>205 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-car"></i>
+              <span>5 Days trip > Hotel Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-plane"></i>
+              <span>Airplane Bill Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-building"></i>
+              <span>Daily Places Visit </span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <h6 class="mb-3 pt-4">Deal Includes:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-car"></i>
-            <span>5 Days trip > Hotel Included</span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-3.jpg" alt="bg-3" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>Canada</h4>
+              <h3>$850</h3>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-car"></i>
+              <span>5 Days trip > Hotel Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-plane"></i>
+              <span>Airplane Bill Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-building"></i>
+              <span>Daily Places Visit </span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-plane"></i>
-            <span>Airplane Bill Included</span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-4.jpg" alt="bg-4" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>USA</h4>
+              <h3>$450</h3>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-car"></i>
+              <span>5 Days trip > Hotel Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-plane"></i>
+              <span>Airplane Bill Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-building"></i>
+              <span>Daily Places Visit </span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-building"></i>
-            <span>Daily Places Visit  </span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-5.jpg" alt="bg-5" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>Turkey</h4>
+              <h3>$250</h3>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-car"></i>
+              <span>5 Days trip > Hotel Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-plane"></i>
+              <span>Airplane Bill Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-building"></i>
+              <span>Daily Places Visit </span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-2.jpg" alt="bg-2">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>England</h4>
-            <h3>$550</h3>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-6.jpg" alt="bg-6" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>Europian Union</h4>
+              <h3>$980</h3>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>405 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-car"></i>
+              <span>5 Days trip > Hotel Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-plane"></i>
+              <span>Airplane Bill Included</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-building"></i>
+              <span>Daily Places Visit </span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>205 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Deal Includes:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-car"></i>
-            <span>5 Days trip > Hotel Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-plane"></i>
-            <span>Airplane Bill Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-building"></i>
-            <span>Daily Places Visit  </span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-3.jpg" alt="bg-3">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>Canada</h4>
-            <h3>$850</h3>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Deal Includes:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-car"></i>
-            <span>5 Days trip > Hotel Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-plane"></i>
-            <span>Airplane Bill Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-building"></i>
-            <span>Daily Places Visit  </span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-4.jpg" alt="bg-4">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>USA</h4>
-            <h3>$450</h3>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Deal Includes:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-car"></i>
-            <span>5 Days trip > Hotel Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-plane"></i>
-            <span>Airplane Bill Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-building"></i>
-            <span>Daily Places Visit  </span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-5.jpg" alt="bg-5">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>Turkey</h4>
-            <h3>$250</h3>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Deal Includes:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-car"></i>
-            <span>5 Days trip > Hotel Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-plane"></i>
-            <span>Airplane Bill Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-building"></i>
-            <span>Daily Places Visit  </span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-6.jpg" alt="bg-6">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>Europian Union</h4>
-            <h3>$980</h3>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>405 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Deal Includes:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-car"></i>
-            <span>5 Days trip > Hotel Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-plane"></i>
-            <span>Airplane Bill Included</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-building"></i>
-            <span>Daily Places Visit  </span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-    </swiper>
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
   <!-- Offer End -->
@@ -420,174 +522,191 @@
   <section class="visa">
     <div class="container">
       <h2>Visa Support</h2>
-      <p>Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey.</p>
+      <p>
+        Experience stress-free travel with our expert visa support. We provide
+        seamless assistance and comprehensive guidance, ensuring a smooth
+        journey.
+      </p>
       <swiper
-      :slidesPerView="3"
-      :spaceBetween="30"
-      :navigation="true"
-      :modules="modules"
-      :autoplay="{
-      delay: 10,
-      disableOnInteraction: false,}"
-      class="mySwiper"
-    >
-      <swiper-slide>
-        <img src="../public/bg-1.jpg" alt="bg-1">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>USA</h4>
+        :slidesPerView="3"
+        :spaceBetween="30"
+        :navigation="true"
+        :modules="modules"
+        :autoplay="{
+          delay: 10,
+          disableOnInteraction: false,
+        }"
+        class="mySwiper"
+      >
+        <swiper-slide>
+          <img src="../public/bg-1.jpg" alt="bg-1" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>USA</h4>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-tags"></i>
+              <span>Best Prices</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-clock"></i>
+              <span>Short Processing Time</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-check"></i>
+              <span>Trustworthy Assistance</span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-2.jpg" alt="bg-2" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>England</h4>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>205 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-tags"></i>
+              <span>Best Prices</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-clock"></i>
+              <span>Short Processing Time</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-check"></i>
+              <span>Trustworthy Assistance</span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-tags"></i>
-            <span>Best Prices</span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-3.jpg" alt="bg-3" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>Canada</h4>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-tags"></i>
+              <span>Best Prices</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-clock"></i>
+              <span>Short Processing Time</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-check"></i>
+              <span>Trustworthy Assistance</span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-clock"></i>
-            <span>Short Processing Time</span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-4.jpg" alt="bg-4" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>USA</h4>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-tags"></i>
+              <span>Best Prices</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-clock"></i>
+              <span>Short Processing Time</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-check"></i>
+              <span>Trustworthy Assistance</span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-check"></i>
-            <span>Trustworthy Assistance</span>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-5.jpg" alt="bg-5" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>Turkey</h4>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>200 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-tags"></i>
+              <span>Best Prices</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-clock"></i>
+              <span>Short Processing Time</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-check"></i>
+              <span>Trustworthy Assistance</span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-2.jpg" alt="bg-2">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>England</h4>
+        </swiper-slide>
+        <swiper-slide>
+          <img src="../public/bg-6.jpg" alt="bg-6" />
+          <div class="offer__card">
+            <div class="offer__top">
+              <h4>Europian Union</h4>
+            </div>
+            <div class="offer__icon offer__list">
+              <i class="fa-solid fa-users"></i>
+              <span>405 Check Ins / person</span>
+            </div>
+            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <div class="offer__icon">
+              <i class="fa-solid fa-tags"></i>
+              <span>Best Prices</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-clock"></i>
+              <span>Short Processing Time</span>
+            </div>
+            <div class="offer__icon">
+              <i class="fa-solid fa-check"></i>
+              <span>Trustworthy Assistance</span>
+            </div>
+            <a href="#contacts">
+              <button class="button button-opacity">Make A Reservation</button>
+            </a>
           </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>205 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-tags"></i>
-            <span>Best Prices</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-clock"></i>
-            <span>Short Processing Time</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-check"></i>
-            <span>Trustworthy Assistance</span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-3.jpg" alt="bg-3">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>Canada</h4>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-tags"></i>
-            <span>Best Prices</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-clock"></i>
-            <span>Short Processing Time</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-check"></i>
-            <span>Trustworthy Assistance</span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-4.jpg" alt="bg-4">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>USA</h4>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-tags"></i>
-            <span>Best Prices</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-clock"></i>
-            <span>Short Processing Time</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-check"></i>
-            <span>Trustworthy Assistance</span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-5.jpg" alt="bg-5">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>Turkey</h4>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>200 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-tags"></i>
-            <span>Best Prices</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-clock"></i>
-            <span>Short Processing Time</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-check"></i>
-            <span>Trustworthy Assistance</span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../public/bg-6.jpg" alt="bg-6">
-        <div class="offer__card">
-          <div class="offer__top">
-            <h4>Europian Union</h4>
-          </div>
-          <div class="offer__icon offer__list">
-            <i class="fa-solid fa-users"></i>
-            <span>405 Check Ins / person</span>
-          </div>
-          <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
-          <div class="offer__icon">
-            <i class="fa-solid fa-tags"></i>
-            <span>Best Prices</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-clock"></i>
-            <span>Short Processing Time</span>
-          </div>
-          <div class="offer__icon">
-            <i class="fa-solid fa-check"></i>
-            <span>Trustworthy Assistance</span>
-          </div>
-          <button class="button button-opacity">Make A Reservation</button>
-        </div>
-      </swiper-slide>
-    </swiper>
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
   <!-- Visa End -->
@@ -596,15 +715,17 @@
   <section id="about" class="explore">
     <div class="container">
       <h3 class="explore__title">Explore Destinations With Ease</h3>
-      <p class="explore__desc">Find the best deals on railway and airplane tickets in each city, carefully selected for
-        you.</p>
+      <p class="explore__desc">
+        Find the best deals on railway and airplane tickets in each city,
+        carefully selected for you.
+      </p>
       <div class="row">
         <div class="col-xl-10">
           <div class="box">
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/train.jpg" alt="train">
+                  <img src="../public/train.jpg" alt="train" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -618,16 +739,31 @@
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
-                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                    <div class="box__btn">
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explore More
+                        </button>
+                      </a>
+                    </div>
                   </div>
                   <div class="box__info">
-                    <p>Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque
-                      landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable
-                      way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible
-                      through our extensive railway network. .</p>
+                    <p>
+                      Embark on a railway adventure and explore destinations
+                      worldwide. Whether it's the picturesque landscapes,
+                      bustling cities, or cultural gems, our rail services offer
+                      a unique and comfortable way to traverse the globe.
+                      Immerse yourself in the beauty of different cultures, all
+                      accessible through our extensive railway network. .
+                    </p>
                   </div>
-                  <div class="box__btn mt-2 mt-sm-3 d-md-none"><button class="button button-opacity">Explore
-                      More</button></div>
+                  <div class="box__btn mt-2 mt-sm-3 d-md-none">
+                    <a href="#contacts">
+                      <button class="button button-opacity">
+                        Explore More
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -636,7 +772,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/plame.jpg" alt="train">
+                  <img src="../public/plame.jpg" alt="train" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -650,16 +786,31 @@
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
-                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                    <div class="box__btn">
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explore More
+                        </button>
+                      </a>
+                    </div>
                   </div>
                   <div class="box__info">
-                    <p>Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque
-                      landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable
-                      way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible
-                      through our extensive railway network. .</p>
+                    <p>
+                      Embark on a railway adventure and explore destinations
+                      worldwide. Whether it's the picturesque landscapes,
+                      bustling cities, or cultural gems, our rail services offer
+                      a unique and comfortable way to traverse the globe.
+                      Immerse yourself in the beauty of different cultures, all
+                      accessible through our extensive railway network. .
+                    </p>
                   </div>
-                  <div class="box__btn mt-2 mt-sm-3 d-md-none"><button class="button button-opacity">Explore
-                      More</button></div>
+                  <div class="box__btn mt-2 mt-sm-3 d-md-none">
+                    <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explore More
+                        </button>
+                      </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -674,15 +825,17 @@
   <section class="country mt-4 pb-5">
     <div class="container">
       <h3 class="explore__title">Visit One Of Our Countries Now</h3>
-      <p class="explore__desc">Discover the best offers in each city, curated just for you. Immerse yourself in a world
-        of savings and indulge in unparalleled experiences.</p>
+      <p class="explore__desc">
+        Discover the best offers in each city, curated just for you. Immerse
+        yourself in a world of savings and indulge in unparalleled experiences.
+      </p>
       <div class="row">
         <div class="col-xl-10">
           <div class="box">
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/dubay.jpg" alt="train">
+                  <img src="../public/dubay.jpg" alt="train" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -696,14 +849,24 @@
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
-                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                    <div class="box__btn">
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explore More
+                        </button>
+                      </a>
+                    </div>
                   </div>
                   <div class="box__info">
-                    <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern
-                      architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the
-                      skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to
-                      music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and
-                      marine-animal parks.</p>
+                    <p>
+                      Dubai is a city and emirate in the United Arab Emirates
+                      known for luxury shopping, ultramodern architecture and a
+                      lively nightlife scene. Burj Khalifa, an 830m-tall tower,
+                      dominates the skyscraper-filled skyline. At its foot lies
+                      Dubai Fountain, with jets and lights choreographed to
+                      music. On artificial islands just offshore is Atlantis,
+                      The Palm, a resort with water and marine-animal parks.
+                    </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
@@ -720,7 +883,7 @@
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#">Need Directions</a>
+                    <a href="#contacts">Need Directions</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -731,7 +894,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/antalya.jpg" alt="antalya">
+                  <img src="../public/antalya.jpg" alt="antalya" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -745,13 +908,24 @@
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
-                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                    <div class="box__btn">
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explore More
+                        </button>
+                      </a>
+                    </div>
                   </div>
                   <div class="box__info">
-                    <p>Antalya is the fastest-growing city in Turkey, and tourists from around the world are discovering
-                      its fabulous mix of great beaches and traditional Turkish culture. Kids will love the Beach Park,
-                      which features Aqua Land (a waterslide-fanatic's dream) and Dolphin Land (home to dolphins, sea
-                      lions and white whales). Make sure to explore the old town center and to see Hadrian's Gate.</p>
+                    <p>
+                      Antalya is the fastest-growing city in Turkey, and
+                      tourists from around the world are discovering its
+                      fabulous mix of great beaches and traditional Turkish
+                      culture. Kids will love the Beach Park, which features
+                      Aqua Land (a waterslide-fanatic's dream) and Dolphin Land
+                      (home to dolphins, sea lions and white whales). Make sure
+                      to explore the old town center and to see Hadrian's Gate.
+                    </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
@@ -768,7 +942,7 @@
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#">Need Directions</a>
+                    <a href="#contacts">Need Directions</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -777,9 +951,9 @@
           </div>
           <div class="box mt-5">
             <div class="row">
-              <div class="col-lg-4 mb-4 mb-lg-0 ">
+              <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/egypt.jpg" alt="egypt">
+                  <img src="../public/egypt.jpg" alt="egypt" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -793,14 +967,24 @@
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
-                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                    <div class="box__btn">
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explore More
+                        </button>
+                      </a>
+                    </div>
                   </div>
                   <div class="box__info">
-                    <p>Sharm El Sheikh is the center of tourism action in Sinai Peninsula and it has the world top
-                      diving sites. Specially the underwater wonders of Ras Mohammed national park that took Sharm city
-                      to whole different level. The city has diving and shipwreck sites that attract both advanced and
-                      recreational divers from around the world to discover the un parallel marine life deep down the
-                      red sea.</p>
+                    <p>
+                      Sharm El Sheikh is the center of tourism action in Sinai
+                      Peninsula and it has the world top diving sites. Specially
+                      the underwater wonders of Ras Mohammed national park that
+                      took Sharm city to whole different level. The city has
+                      diving and shipwreck sites that attract both advanced and
+                      recreational divers from around the world to discover the
+                      un parallel marine life deep down the red sea.
+                    </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
@@ -817,7 +1001,7 @@
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#">Need Directions</a>
+                    <a href="#contacts">Need Directions</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -828,7 +1012,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/istanbul.jpg" alt="istanbul">
+                  <img src="../public/istanbul.jpg" alt="istanbul" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -842,13 +1026,23 @@
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
-                    <div class="box__btn"><button class="button button-opacity">Explore More</button></div>
+                    <div class="box__btn">
+                      <a href="#contacts">
+                        <button class="button button-opacity">
+                          Explore More
+                        </button>
+                      </a>
+                    </div>
                   </div>
                   <div class="box__info">
-                    <p>Istanbul is the most populous city in Turkey and its cultural, economic and historic center. It
-                      is located in north-western part of Turkey, divided into European and Asian side by Bosphorus,
-                      which connects the Sea of Marmara and Black Sea. It is the only city in the world that sits on two
-                      continents.</p>
+                    <p>
+                      Istanbul is the most populous city in Turkey and its
+                      cultural, economic and historic center. It is located in
+                      north-western part of Turkey, divided into European and
+                      Asian side by Bosphorus, which connects the Sea of Marmara
+                      and Black Sea. It is the only city in the world that sits
+                      on two continents.
+                    </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
@@ -865,7 +1059,7 @@
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#">Need Directions</a>
+                    <a href="#contacts">Need Directions</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -881,11 +1075,13 @@
   <!-- Reservation Start -->
   <section class="reservation">
     <div class="container">
-      <h4>Book Prefered Deal Here </h4>
+      <h4>Book Prefered Deal Here</h4>
       <div class="hr"></div>
       <h2>Make Your Reservation</h2>
-      <div class="reservation__btn" style="padding-bottom: 30px;">
-        <button class="button button-white">Discover More</button>
+      <div class="reservation__btn" style="padding-bottom: 30px">
+        <a href="#contacts">
+          <button class="button button-white">Discover More</button>
+        </a>
       </div>
       <div class="row reservation__row">
         <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -921,31 +1117,66 @@
   <!-- Reservation End -->
 
   <!-- Contact Start -->
-  <section class="contact" id="contacts" style="padding-top: 100px; padding-bottom: 100px;">
+  <section
+    class="contact"
+    id="contacts"
+    style="padding-top: 100px; padding-bottom: 100px"
+  >
     <div class="container">
       <div class="contact__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5425.747982123416!2d69.201104!3d41.290949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae89a274fdb9b7%3A0x2b8bc58608ca7fb2!2sChilanzar-25%2C%20100152%2C%20Tashkent%2C%20Tashkent%20Region%2C%20Uzbekistan!5e1!3m2!1sen!2sus!4v1716135766484!5m2!1sen!2sus"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
         <div class="contact__box">
-          <h2 class="text-center mb-3">Make Your <span style="color: #22B3C1;">Reservation</span> Through This <span
-              style="color: #22B3C1;">Form</span> </h2>
-          <form>
+          <h2 class="text-center mb-3">
+            Make Your <span style="color: #22b3c1">Reservation</span> Through
+            This <span style="color: #22b3c1">Form</span>
+          </h2>
+          <form @submit.prevent="submitForm">
             <div class="row">
               <div class="col-12 col-md-6 mb-4">
-                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
-                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
-                  placeholder="Ex. Johm Smithee" required>
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  v-model="name"
+                  class="form-control form-control-lg"
+                  id="exampleFormControlInput1"
+                  placeholder="Ex. Johm Smithee"
+                  required
+                />
               </div>
               <div class="col-12 col-md-6 mb-4">
-                <label for="exampleFormControlInput2" class="form-label">Your Phone Number</label>
-                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput2"
-                  placeholder="Ex. +998 91 456 37 73" required>
+                <label for="exampleFormControlInput2" class="form-label"
+                  >Your Phone Number</label
+                >
+                <input
+                  type="text"
+                  v-model="phone_number"
+                  class="form-control form-control-lg"
+                  id="exampleFormControlInput2"
+                  placeholder="Ex. +998 91 456 37 73"
+                  required
+                />
               </div>
               <div class="col-12 col-md-6 mt-1 mb-4">
-                <label for="exampleFormControlInput3" class="form-label">Number Of Guests</label>
-                <select class="form-select" aria-label="Default select example" id="exampleFormControlInput3" required>
+                <label for="exampleFormControlInput3" class="form-label"
+                  >Number Of Guests</label
+                >
+                <select
+                  class="form-select"
+                  v-model="guests"
+                  aria-label="Default select example"
+                  id="exampleFormControlInput3"
+                  required
+                >
                   <option selected disabled value="">ex. 3 or 4 or 5</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -954,12 +1185,27 @@
                 </select>
               </div>
               <div class="col-12 col-md-6 mt-1 mb-4">
-                <label for="exampleFormControlInput4" class="form-label">Check In Date</label>
-                <input type="date"  class="form-control form-control-lg">
+                <label for="exampleFormControlInput4" class="form-label"
+                  >Check In Date</label
+                >
+                <input
+                  type="date"
+                  v-model="date"
+                  required
+                  class="form-control form-control-lg"
+                />
               </div>
               <div class="col-12 mt-1 mb-4">
-                <label for="exampleFormControlInput5" class="form-label">Choose Your Destination</label>
-                <select class="form-select form-select-lg" aria-label="Default select example" id="exampleFormControlInput5" required>
+                <label for="exampleFormControlInput5" class="form-label"
+                  >Choose Your Destination</label
+                >
+                <select
+                  class="form-select form-select-lg"
+                  v-model="destination"
+                  aria-label="Default select example"
+                  id="exampleFormControlInput5"
+                  required
+                >
                   <option value="Antalya" selected>Antalya</option>
                   <option value="Istanbul">Istanbul</option>
                   <option value="Dubai">Dubai</option>
@@ -970,8 +1216,16 @@
                 </select>
               </div>
               <div class="col-12 mt-1 mb-4">
-                <label for="exampleFormControlInput6" class="form-label">Choose Your Visa Support</label>
-                <select class="form-select form-select-lg" aria-label="Default select example" id="exampleFormControlInput6" required>
+                <label for="exampleFormControlInput6" class="form-label"
+                  >Choose Your Visa Support</label
+                >
+                <select
+                  class="form-select form-select-lg"
+                  v-model="visa"
+                  aria-label="Default select example"
+                  id="exampleFormControlInput6"
+                  required
+                >
                   <option value="" selected disabled>Country</option>
                   <option value="USA">USA</option>
                   <option value="Europe">Europe</option>
@@ -984,7 +1238,9 @@
                 </select>
               </div>
               <div class="d-grid mt-3">
-                <button class="button button-opacity">Make Your Reservation Now</button>
+                <button class="button button-opacity">
+                  Make Your Reservation Now
+                </button>
               </div>
             </div>
           </form>
@@ -995,49 +1251,93 @@
   <!-- Contact End -->
 
   <!-- Footer Start -->
-  <footer class="footer" style="background-image: url(../public/footerBg.jpg);">
+  <footer class="footer" style="background-image: url(../public/footerBg.jpg)">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8 text-center text-md-start">
           <h2>ARE YOU LOOKING TO TRAVEL ?</h2>
           <h5>Make A Reservation By Clicking The Button</h5>
         </div>
-        <div class="col-12 col-md-4 mt-4 mt-md-0 d-flex justify-content-center justify-content-md-end align-items-center">
-          <button class="button button-border">Book Your Now</button>
+        <div
+          class="col-12 col-md-4 mt-4 mt-md-0 d-flex justify-content-center justify-content-md-end align-items-center"
+        >
+          <a href="#contacts">
+            <button class="button button-border">Book Your Now</button>
+          </a>
         </div>
       </div>
     </div>
   </footer>
-  <div class="copy" style="padding-top: 25px; padding-bottom: 25px; background-color: #22B3C1;">
+  <div
+    class="copy"
+    style="padding-top: 25px; padding-bottom: 25px; background-color: #22b3c1"
+  >
     <div class="container text-center">
-      <p style="padding: 0; margin: 0;">Copyright © 2024 Zamon Business Tour. All rights reserved. </p>
+      <p style="padding: 0; margin: 0">
+        Copyright © 2024 Zamon Business Tour. All rights reserved.
+      </p>
     </div>
   </div>
   <!-- Footer End -->
-
-
-
 </template>
 
 <script setup>
 import { ref } from "vue";
+import axios from "axios";
+import { toast } from "vue3-toastify";
+import "vue3-toastify/dist/index.css";
 
 const isOpen = ref(false);
+const name = ref("");
+const phone_number = ref("");
+const guests = ref("");
+const date = ref("");
+const destination = ref("Antalya");
+const visa = ref("");
+const token = ref("7069003625:AAGAQJns8zC96OqRSQIwC8Ewj1efbWCnIW0");
+const chat_id = ref("237282713");
 
 function openMenu() {
   document.querySelector(".header__bars").classList.toggle("header__rotate");
   isOpen.value = !isOpen.value;
 }
+
+async function submitForm() {
+  try {
+    const response = await axios.post(
+      `https://api.telegram.org/bot${token.value}/sendMessage`,
+      {
+        chat_id: chat_id.value,
+        text: `Name: ${name.value}\nPhone Number: ${phone_number.value}\nNumber of Guests: ${guests.value}\nDate: ${date.value}\nDestination: ${destination.value}\nVisa Support: ${visa.value}`,
+      }
+    );
+    toast.success("Your Reservation is successfully made!", {
+      autoClose: 1000,
+      theme: "colored",
+    });
+    name.value = "";
+    phone_number.value = "";
+    guests.value = "";
+    date.value = "";
+    destination.value = "Antalya";
+    visa.value = "";
+  } catch (error) {
+    toast.error(`Your reservation is not made! ${error}`, {
+      autoClose: 1000,
+      theme: "colored",
+    });
+  }
+}
 </script>
 
 <script>
- import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Navigation } from "swiper/modules";
 
 export default {
   components: {
@@ -1084,34 +1384,34 @@ img {
 }
 
 .button {
-  background-color: #22B3C1;
+  background-color: #22b3c1;
   color: #fff;
   border: none;
   border-radius: 50px;
   padding: 12px 35px;
   font-weight: 500;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
-    color: #22B3C1 !important;
-    background-color: #fff;
+    color: #22b3c1 !important;
+    background-color: #fff !important;
   }
 }
 
 .button-opacity {
   &:hover {
-    background-color: #22b4c1ca;
+    background-color: #22b4c1ca !important;
     color: #fff !important;
   }
 }
 
 .button-white {
   background-color: #fff;
-  color: #22B3C1;
-  transition: all .3s ease;
+  color: #22b3c1;
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: #22B3C1;
+    background-color: #22b3c1 !important;
     color: #fff !important;
   }
 }
@@ -1299,7 +1599,7 @@ img {
     }
 
     h4 {
-      color: #22B3C1 !important;
+      color: #22b3c1 !important;
       font-size: 21px;
       font-weight: 700;
     }
@@ -1309,14 +1609,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #22B3C1;
+    border: 1px solid #22b3c1;
     border-radius: 50px;
     width: 60px;
     height: 60px;
 
     i {
       font-size: 24px;
-      color: #22B3C1 !important;
+      color: #22b3c1 !important;
     }
   }
 
@@ -1370,7 +1670,7 @@ img {
       font-size: 55px;
     }
 
-    &>div {
+    & > div {
       height: 100%;
       display: flex;
       justify-content: center;
@@ -1400,22 +1700,23 @@ img {
   padding-top: 80px;
   text-align: center;
   border-bottom: 1px solid #eee;
-  
+
   .swiper-wrapper {
     padding-bottom: 180px;
   }
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     width: 50px;
     height: 50px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #22B3C1;
-    color: #22B3C1;
-    transition: all .3s ease;
+    border: 1px solid #22b3c1;
+    color: #22b3c1;
+    transition: all 0.3s ease;
     &:hover {
-      background-color: #22B3C1;
+      background-color: #22b3c1;
       color: #fff;
     }
   }
@@ -1425,7 +1726,8 @@ img {
   .swiper-button-prev {
     transform: translateY(200px) translateX(560px);
   }
-  .swiper-button-next:after, .swiper-button-prev:after {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
     font-size: 25px;
   }
   .swiper-slide {
@@ -1452,7 +1754,7 @@ img {
     font-weight: 700;
     margin-bottom: 20px;
   }
-  p{
+  p {
     font-size: 15px;
     line-height: 30px;
     color: #afafaf;
@@ -1480,7 +1782,6 @@ img {
       border-top: 1px solid #ccc;
       font-weight: 500;
     }
-
   }
   &__list {
     padding-bottom: 10px;
@@ -1501,7 +1802,8 @@ img {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    span,i {
+    span,
+    i {
       font-size: 15px;
       color: #afafaf;
     }
@@ -1513,22 +1815,23 @@ img {
   padding-top: 80px;
   text-align: center;
   border-bottom: 1px solid #eee;
-  
+
   .swiper-wrapper {
     padding-bottom: 180px;
   }
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     width: 50px;
     height: 50px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #22B3C1;
-    color: #22B3C1;
-    transition: all .3s ease;
+    border: 1px solid #22b3c1;
+    color: #22b3c1;
+    transition: all 0.3s ease;
     &:hover {
-      background-color: #22B3C1;
+      background-color: #22b3c1;
       color: #fff;
     }
   }
@@ -1538,7 +1841,8 @@ img {
   .swiper-button-prev {
     transform: translateY(200px) translateX(560px);
   }
-  .swiper-button-next:after, .swiper-button-prev:after {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
     font-size: 25px;
   }
   .swiper-slide {
@@ -1565,7 +1869,7 @@ img {
     font-weight: 700;
     margin-bottom: 20px;
   }
-  p{
+  p {
     font-size: 15px;
     line-height: 30px;
     color: #afafaf;
@@ -1593,7 +1897,6 @@ img {
       border-top: 1px solid #ccc;
       font-weight: 500;
     }
-
   }
   &__list {
     padding-bottom: 10px;
@@ -1614,7 +1917,8 @@ img {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    span,i {
+    span,
+    i {
       font-size: 15px;
       color: #afafaf;
     }
@@ -1644,7 +1948,7 @@ img {
 .contact {
   &__map {
     margin-top: 80px;
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     border-radius: 23px;
     overflow: hidden;
 
@@ -1736,19 +2040,18 @@ img {
     a {
       font-weight: 500;
       color: #22b3c1;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
 
     i {
       color: #22b3c1;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
     }
 
     &:hover i {
       margin-left: 10px;
     }
   }
-
 }
 
 /* Reservation Styles */
@@ -1807,7 +2110,7 @@ img {
 
     i {
       font-size: 20px;
-      color: #22B3C1;
+      color: #22b3c1;
     }
   }
 
@@ -1819,7 +2122,7 @@ img {
   }
 
   a {
-    color: #22B3C1;
+    color: #22b3c1;
   }
 }
 
@@ -1847,7 +2150,6 @@ img {
     font-size: 15px;
   }
 }
-
 
 /* Media Styles */
 
@@ -1944,7 +2246,6 @@ img {
   .carousel-indicators {
     bottom: -20px;
   }
-
 }
 
 @media (max-width: 770px) {
@@ -2019,7 +2320,6 @@ img {
 
     &__icon {
       i {
-
         font-size: 20px;
       }
 
