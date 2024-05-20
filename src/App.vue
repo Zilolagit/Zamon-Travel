@@ -10,26 +10,21 @@
             </a>
           </div>
         </div>
-        <div
-          class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center"
-        >
+        <div class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center">
           <ul class="header__list">
             <li class="header__item header__item-active">
-              <a href="/">Home</a>
+              <a href="/">{{ $t('home') }}</a>
             </li>
-            <li class="header__item"><a href="#about">About</a></li>
-            <li class="header__item"><a href="#tour">Tours</a></li>
-            <li class="header__item"><a href="#contacts">Contacts</a></li>
+            <li class="header__item"><a href="#about">{{ $t('about') }}</a></li>
+            <li class="header__item"><a href="#tour">{{ $t('tours') }}</a></li>
+            <li class="header__item"><a href="#contacts">{{ $t('contacts') }}</a></li>
           </ul>
         </div>
-        <div
-          class="col-lg-3 d-none d-lg-flex justify-content-end"
-          style="gap: 25px"
-        >
+        <div class="col-lg-3 d-none d-lg-flex justify-content-end" style="gap: 25px">
           <ul class="header__lang">
-            <li><a href="#">UZ</a></li>
-            <li><a href="#">ENG</a></li>
-            <li><a href="#">RU</a></li>
+            <li><a href="#" @click="$i18n.locale = 'uz'">UZ</a></li>
+            <li><a href="#" @click="$i18n.locale = 'en'">ENG</a></li>
+            <li><a href="#" @click="$i18n.locale = 'ru'">RU</a></li>
           </ul>
           <ul class="header__social">
             <li>
@@ -40,9 +35,7 @@
             </li>
           </ul>
         </div>
-        <div
-          class="col-6 d-flex justify-content-end align-items-center d-lg-none"
-        >
+        <div class="col-6 d-flex justify-content-end align-items-center d-lg-none">
           <div class="header__bars" @click="openMenu">
             <div class="header__bar header__bar-first"></div>
             <div class="header__bar header__bar-second"></div>
@@ -52,10 +45,10 @@
       </div>
       <div class="header__mobile" v-if="isOpen">
         <ul class="header__menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#tours">Tours</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="/">{{ $t('home') }}</a></li>
+          <li><a href="#about">{{ $t('about') }}</a></li>
+          <li><a href="#tours">{{ $t('tours') }}</a></li>
+          <li><a href="#contacts">{{ $t('contacts') }}</a></li>
           <li><a href="#">UZ</a></li>
           <li><a href="#">ENG</a></li>
           <li><a href="#">RU</a></li>
@@ -74,102 +67,69 @@
   <!-- Hero Start -->
   <section class="hero">
     <div class="container-fluid" style="padding-left: 0; padding-right: 0">
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark carousel-fade"
-      >
+      <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade">
         <div class="carousel-indicators">
           <div class="hero__indicate">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
             <p>1</p>
           </div>
           <div class="hero__indicate">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
             <p>2</p>
           </div>
           <div class="hero__indicate">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
             <p>3</p>
           </div>
         </div>
         <div class="carousel-inner">
-          <div
-            class="carousel-item active"
-            style="
-              background-image: url(https://zamontour.uz/assets/images/istanbul.jpg);
-            "
-            data-bs-interval="1000"
-          >
+          <div class="carousel-item active" style="
+              background-image: url(../public/istanbul1.jpg);
+            " data-bs-interval="1000">
             <div>
               <div class="container text-center">
-                <h2>Take a Glimpse Into The Beautiful City Of:</h2>
-                <h1>Istanbul</h1>
+                <h2>{{ $t('hero_desc') }}</h2>
+                <h1>{{ $t('hero_title_first') }}</h1>
                 <div class="hero__btn">
-                  <a href="#contacts"
-                    ><button class="button">Go There</button></a
-                  >
+                  <a href="#contacts"><button class="button">{{ $t('go_there') }}</button></a>
                 </div>
                 <div class="hero__card">
                   <div class="row">
-                    <div
-                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-user"></i>
                       </div>
                       <div class="hero__box">
-                        <p>Population:</p>
+                        <p>{{ $t('population') }}</p>
                         <h4>8.66 M</h4>
                       </div>
                     </div>
-                    <div
-                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-globe"></i>
                       </div>
                       <div class="hero__box">
-                        <p>Territory:</p>
+                        <p>{{ $t('territory') }}</p>
                         <h4>513.120 KM2</h4>
                       </div>
                     </div>
-                    <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-house"></i>
                       </div>
                       <div class="hero__box">
-                        <p>AVG Price:</p>
+                        <p>{{ $t('price') }}</p>
                         <h4>$165.450</h4>
                       </div>
                     </div>
                     <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center"
-                    >
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explain More
+                          {{ $t('explore') }}
                         </button>
                       </a>
                     </div>
@@ -178,66 +138,50 @@
               </div>
             </div>
           </div>
-          <div
-            class="carousel-item"
-            data-bs-interval="2000"
-            style="
-              background-image: url(https://zamontour.uz/assets/images/sharm.jpg);
-            "
-          >
+          <div class="carousel-item" data-bs-interval="2000" style="
+              background-image: url(../public/sharm.jpg);
+            ">
             <div>
               <div class="container text-center">
-                <h2>Take a Glimpse Into The Beautiful City Of:</h2>
-                <h1>Sharm El-Sheikh</h1>
+                <h2>{{ $t('hero_desc') }}</h2>
+                <h1>{{ $t('hero_title_second') }}</h1>
                 <div class="hero__btn">
-                  <a href="#contacts"
-                    ><button class="button">Go There</button></a
-                  >
+                  <a href="#contacts"><button class="button">{{ $t('go_there') }}</button></a>
                 </div>
                 <div class="hero__card">
                   <div class="row">
-                    <div
-                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-user"></i>
                       </div>
                       <div class="hero__box">
-                        <p>Population:</p>
+                        <p>{{ $t('population') }}</p>
                         <h4>8.66 M</h4>
                       </div>
                     </div>
-                    <div
-                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-globe"></i>
                       </div>
                       <div class="hero__box">
-                        <p>Territory:</p>
+                        <p>{{ $t('territory') }}</p>
                         <h4>513.120 KM2</h4>
                       </div>
                     </div>
-                    <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-house"></i>
                       </div>
                       <div class="hero__box">
-                        <p>AVG Price:</p>
+                        <p>{{ $t('price') }}</p>
                         <h4>$165.450</h4>
                       </div>
                     </div>
                     <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center"
-                    >
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explain More
+                          {{ $t('explore') }}
                         </button>
                       </a>
                     </div>
@@ -246,65 +190,50 @@
               </div>
             </div>
           </div>
-          <div
-            class="carousel-item text-center"
-            style="
-              background-image: url(https://exolands.com/wp-content/uploads/2021/03/burj-al-arab-5919133_1920.jpg);
-            "
-          >
+          <div class="carousel-item text-center" style="
+              background-image: url(../public/dubay1.jpg);
+            ">
             <div>
               <div class="container text-center">
-                <h2>Take a Glimpse Into The Beautiful City Of:</h2>
-                <h1>Dubai</h1>
+                <h2>{{ $t('hero_desc') }}</h2>
+                <h1>{{ $t('hero_title_third') }}</h1>
                 <div class="hero__btn">
-                  <a href="#contacts"
-                    ><button class="button">Go There</button></a
-                  >
+                  <a href="#contacts"><button class="button">{{ $t('go_there') }}</button></a>
                 </div>
                 <div class="hero__card">
                   <div class="row">
-                    <div
-                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-user"></i>
                       </div>
                       <div class="hero__box">
-                        <p>Population:</p>
+                        <p>{{ $t('population') }}:</p>
                         <h4>8.66 M</h4>
                       </div>
                     </div>
-                    <div
-                      class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-4 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-globe"></i>
                       </div>
                       <div class="hero__box">
-                        <p>Territory:</p>
+                        <p>{{ $t('territory') }}</p>
                         <h4>513.120 KM2</h4>
                       </div>
                     </div>
-                    <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center"
-                      style="gap: 20px"
-                    >
+                    <div class="col-6 col-lg-3 mb-lg-0 d-flex align-items-center" style="gap: 20px">
                       <div class="hero__icon">
                         <i class="fa-solid fa-house"></i>
                       </div>
                       <div class="hero__box">
-                        <p>AVG Price:</p>
+                        <p>{{ $t('price') }}</p>
                         <h4>$165.450</h4>
                       </div>
                     </div>
                     <div
-                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center"
-                    >
+                      class="col-6 col-lg-3 mb-lg-0 d-flex justify-content-lg-end justify-content-start align-items-center">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explain More
+                          {{ $t('explore') }}
                         </button>
                       </a>
                     </div>
@@ -322,49 +251,40 @@
   <!-- Offer Start -->
   <section class="offer" id="tour">
     <div class="container">
-      <h2>Best Weekly Offers In Each City</h2>
+      <h2>{{ $t('offer_title') }}</h2>
       <p>
-        Discover the best weekly offers in each city, curated just for you.
-        Immerse yourself in a world of savings and indulge in unparalleled
-        experiences.
+        {{ $t('offer_desc') }}
       </p>
-      <swiper
-        :slidesPerView="3"
-        :spaceBetween="30"
-        :navigation="true"
-        :modules="modules"
-        :autoplay="{
-          delay: 10,
-          disableOnInteraction: false,
-        }"
-        class="mySwiper"
-      >
+      <swiper :slidesPerView="3" :spaceBetween="30" :navigation="true" :modules="modules" :autoplay="{
+                delay: 10,
+                disableOnInteraction: false,
+              }" class="mySwiper">
         <swiper-slide>
           <img src="../public/bg-1.jpg" alt="bg-1" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>USA</h4>
+              <h4>{{ $t('card1.title') }}</h4>
               <h3>$450</h3>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('card1.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('deal') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-car"></i>
-              <span>5 Days trip > Hotel Included</span>
+              <span>{{ $t('card1.car') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-plane"></i>
-              <span>Airplane Bill Included</span>
+              <span>{{ $t('card1.plane') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-building"></i>
-              <span>Daily Places Visit </span>
+              <span>{{ $t('card1.building') }} </span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -372,28 +292,28 @@
           <img src="../public/bg-2.jpg" alt="bg-2" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>England</h4>
+              <h4>{{ $t('card2.title') }}</h4>
               <h3>$550</h3>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>205 Check Ins / person</span>
+              <span>{{ $t('card2.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('deal') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-car"></i>
-              <span>5 Days trip > Hotel Included</span>
+              <span>{{ $t('card2.car') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-plane"></i>
-              <span>Airplane Bill Included</span>
+              <span>{{ $t('card2.plane') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-building"></i>
-              <span>Daily Places Visit </span>
+              <span>{{ $t('card2.building') }} </span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -401,28 +321,28 @@
           <img src="../public/bg-3.jpg" alt="bg-3" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>Canada</h4>
-              <h3>$850</h3>
+              <h4>{{ $t('card3.title') }}</h4>
+              <h3>$550</h3>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('card3.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('deal') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-car"></i>
-              <span>5 Days trip > Hotel Included</span>
+              <span>{{ $t('card3.car') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-plane"></i>
-              <span>Airplane Bill Included</span>
+              <span>{{ $t('card3.plane') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-building"></i>
-              <span>Daily Places Visit </span>
+              <span>{{ $t('card3.building') }} </span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -430,28 +350,28 @@
           <img src="../public/bg-4.jpg" alt="bg-4" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>USA</h4>
-              <h3>$450</h3>
+              <h4>{{ $t('card4.title') }}</h4>
+              <h3>$550</h3>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('card4.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('deal') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-car"></i>
-              <span>5 Days trip > Hotel Included</span>
+              <span>{{ $t('card4.car') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-plane"></i>
-              <span>Airplane Bill Included</span>
+              <span>{{ $t('card4.plane') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-building"></i>
-              <span>Daily Places Visit </span>
+              <span>{{ $t('card4.building') }} </span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -459,28 +379,28 @@
           <img src="../public/bg-5.jpg" alt="bg-5" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>Turkey</h4>
-              <h3>$250</h3>
+              <h4>{{ $t('card5.title') }}</h4>
+              <h3>$550</h3>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('card5.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('deal') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-car"></i>
-              <span>5 Days trip > Hotel Included</span>
+              <span>{{ $t('card5.car') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-plane"></i>
-              <span>Airplane Bill Included</span>
+              <span>{{ $t('card5.plane') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-building"></i>
-              <span>Daily Places Visit </span>
+              <span>{{ $t('card5.building') }} </span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -488,28 +408,28 @@
           <img src="../public/bg-6.jpg" alt="bg-6" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>Europian Union</h4>
-              <h3>$980</h3>
+              <h4>{{ $t('card6.title') }}</h4>
+              <h3>$550</h3>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>405 Check Ins / person</span>
+              <span>{{ $t('card6.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Deal Includes:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('deal') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-car"></i>
-              <span>5 Days trip > Hotel Included</span>
+              <span>{{ $t('card6.car') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-plane"></i>
-              <span>Airplane Bill Included</span>
+              <span>{{ $t('card6.plane') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-building"></i>
-              <span>Daily Places Visit </span>
+              <span>{{ $t('card6.building') }} </span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -527,17 +447,10 @@
         seamless assistance and comprehensive guidance, ensuring a smooth
         journey.
       </p>
-      <swiper
-        :slidesPerView="3"
-        :spaceBetween="30"
-        :navigation="true"
-        :modules="modules"
-        :autoplay="{
-          delay: 10,
-          disableOnInteraction: false,
-        }"
-        class="mySwiper"
-      >
+      <swiper :slidesPerView="3" :spaceBetween="30" :navigation="true" :modules="modules" :autoplay="{
+                delay: 10,
+                disableOnInteraction: false,
+              }" class="mySwiper">
         <swiper-slide>
           <img src="../public/bg-1.jpg" alt="bg-1" />
           <div class="offer__card">
@@ -806,10 +719,10 @@
                   </div>
                   <div class="box__btn mt-2 mt-sm-3 d-md-none">
                     <a href="#contacts">
-                        <button class="button button-opacity">
-                          Explore More
-                        </button>
-                      </a>
+                      <button class="button button-opacity">
+                        Explore More
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1117,22 +1030,13 @@
   <!-- Reservation End -->
 
   <!-- Contact Start -->
-  <section
-    class="contact"
-    id="contacts"
-    style="padding-top: 100px; padding-bottom: 100px"
-  >
+  <section class="contact" id="contacts" style="padding-top: 100px; padding-bottom: 100px">
     <div class="container">
       <div class="contact__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5425.747982123416!2d69.201104!3d41.290949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae89a274fdb9b7%3A0x2b8bc58608ca7fb2!2sChilanzar-25%2C%20100152%2C%20Tashkent%2C%20Tashkent%20Region%2C%20Uzbekistan!5e1!3m2!1sen!2sus!4v1716135766484!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="contact__box">
           <h2 class="text-center mb-3">
             Make Your <span style="color: #22b3c1">Reservation</span> Through
@@ -1141,42 +1045,19 @@
           <form @submit.prevent="submitForm">
             <div class="row">
               <div class="col-12 col-md-6 mb-4">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Your Name</label
-                >
-                <input
-                  type="text"
-                  v-model="name"
-                  class="form-control form-control-lg"
-                  id="exampleFormControlInput1"
-                  placeholder="Ex. Johm Smithee"
-                  required
-                />
+                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                <input type="text" v-model="name" class="form-control form-control-lg" id="exampleFormControlInput1"
+                  placeholder="Ex. Johm Smithee" required />
               </div>
               <div class="col-12 col-md-6 mb-4">
-                <label for="exampleFormControlInput2" class="form-label"
-                  >Your Phone Number</label
-                >
-                <input
-                  type="text"
-                  v-model="phone_number"
-                  class="form-control form-control-lg"
-                  id="exampleFormControlInput2"
-                  placeholder="Ex. +998 91 456 37 73"
-                  required
-                />
+                <label for="exampleFormControlInput2" class="form-label">Your Phone Number</label>
+                <input type="text" v-model="phone_number" class="form-control form-control-lg"
+                  id="exampleFormControlInput2" placeholder="Ex. +998 91 456 37 73" required />
               </div>
               <div class="col-12 col-md-6 mt-1 mb-4">
-                <label for="exampleFormControlInput3" class="form-label"
-                  >Number Of Guests</label
-                >
-                <select
-                  class="form-select"
-                  v-model="guests"
-                  aria-label="Default select example"
-                  id="exampleFormControlInput3"
-                  required
-                >
+                <label for="exampleFormControlInput3" class="form-label">Number Of Guests</label>
+                <select class="form-select" v-model="guests" aria-label="Default select example"
+                  id="exampleFormControlInput3" required>
                   <option selected disabled value="">ex. 3 or 4 or 5</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -1185,27 +1066,13 @@
                 </select>
               </div>
               <div class="col-12 col-md-6 mt-1 mb-4">
-                <label for="exampleFormControlInput4" class="form-label"
-                  >Check In Date</label
-                >
-                <input
-                  type="date"
-                  v-model="date"
-                  required
-                  class="form-control form-control-lg"
-                />
+                <label for="exampleFormControlInput4" class="form-label">Check In Date</label>
+                <input type="date" v-model="date" required class="form-control form-control-lg" />
               </div>
               <div class="col-12 mt-1 mb-4">
-                <label for="exampleFormControlInput5" class="form-label"
-                  >Choose Your Destination</label
-                >
-                <select
-                  class="form-select form-select-lg"
-                  v-model="destination"
-                  aria-label="Default select example"
-                  id="exampleFormControlInput5"
-                  required
-                >
+                <label for="exampleFormControlInput5" class="form-label">Choose Your Destination</label>
+                <select class="form-select form-select-lg" v-model="destination" aria-label="Default select example"
+                  id="exampleFormControlInput5" required>
                   <option value="Antalya" selected>Antalya</option>
                   <option value="Istanbul">Istanbul</option>
                   <option value="Dubai">Dubai</option>
@@ -1216,16 +1083,9 @@
                 </select>
               </div>
               <div class="col-12 mt-1 mb-4">
-                <label for="exampleFormControlInput6" class="form-label"
-                  >Choose Your Visa Support</label
-                >
-                <select
-                  class="form-select form-select-lg"
-                  v-model="visa"
-                  aria-label="Default select example"
-                  id="exampleFormControlInput6"
-                  required
-                >
+                <label for="exampleFormControlInput6" class="form-label">Choose Your Visa Support</label>
+                <select class="form-select form-select-lg" v-model="visa" aria-label="Default select example"
+                  id="exampleFormControlInput6" required>
                   <option value="" selected disabled>Country</option>
                   <option value="USA">USA</option>
                   <option value="Europe">Europe</option>
@@ -1259,8 +1119,7 @@
           <h5>Make A Reservation By Clicking The Button</h5>
         </div>
         <div
-          class="col-12 col-md-4 mt-4 mt-md-0 d-flex justify-content-center justify-content-md-end align-items-center"
-        >
+          class="col-12 col-md-4 mt-4 mt-md-0 d-flex justify-content-center justify-content-md-end align-items-center">
           <a href="#contacts">
             <button class="button button-border">Book Your Now</button>
           </a>
@@ -1268,10 +1127,8 @@
       </div>
     </div>
   </footer>
-  <div
-    class="copy"
-    style="padding-top: 25px; padding-bottom: 25px; background-color: #22b3c1"
-  >
+
+  <div class="copy" style="padding-top: 25px; padding-bottom: 25px; background-color: #22b3c1">
     <div class="container text-center">
       <p style="padding: 0; margin: 0">
         Copyright © 2024 Zamon Business Tour. All rights reserved.
@@ -1328,6 +1185,7 @@ async function submitForm() {
     });
   }
 }
+
 </script>
 
 <script>
@@ -1670,7 +1528,7 @@ img {
       font-size: 55px;
     }
 
-    & > div {
+    &>div {
       height: 100%;
       display: flex;
       justify-content: center;
@@ -1704,6 +1562,7 @@ img {
   .swiper-wrapper {
     padding-bottom: 180px;
   }
+
   .swiper-button-next,
   .swiper-button-prev {
     width: 50px;
@@ -1715,32 +1574,39 @@ img {
     border: 1px solid #22b3c1;
     color: #22b3c1;
     transition: all 0.3s ease;
+
     &:hover {
       background-color: #22b3c1;
       color: #fff;
     }
   }
+
   .swiper-button-next {
     transform: translateY(200px) translateX(-580px);
   }
+
   .swiper-button-prev {
     transform: translateY(200px) translateX(560px);
   }
+
   .swiper-button-next:after,
   .swiper-button-prev:after {
     font-size: 25px;
   }
+
   .swiper-slide {
     height: 420px;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: start;
+
     button {
       width: 100%;
       margin-top: 20px;
       font-size: 15px;
     }
+
     img {
       width: 70%;
       height: 350px;
@@ -1750,10 +1616,12 @@ img {
       border-bottom-left-radius: 23px;
     }
   }
+
   h2 {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   p {
     font-size: 15px;
     line-height: 30px;
@@ -1762,6 +1630,7 @@ img {
     margin: 0 auto;
     margin-bottom: 70px;
   }
+
   &__card {
     text-align: left;
     position: absolute;
@@ -1773,35 +1642,42 @@ img {
     border: 1px solid #eee;
     padding: 25px;
     width: 280px;
+
     h4 {
       font-weight: 700;
       font-size: 23px;
     }
+
     h6 {
       padding-top: 20px;
       border-top: 1px solid #ccc;
       font-weight: 500;
     }
   }
+
   &__list {
     padding-bottom: 10px;
   }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6px;
+
     h3 {
       font-weight: 700;
       color: #22b3c1;
       font-size: 20px;
     }
   }
+
   &__icon {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+
     span,
     i {
       font-size: 15px;
@@ -1819,6 +1695,7 @@ img {
   .swiper-wrapper {
     padding-bottom: 180px;
   }
+
   .swiper-button-next,
   .swiper-button-prev {
     width: 50px;
@@ -1830,32 +1707,39 @@ img {
     border: 1px solid #22b3c1;
     color: #22b3c1;
     transition: all 0.3s ease;
+
     &:hover {
       background-color: #22b3c1;
       color: #fff;
     }
   }
+
   .swiper-button-next {
     transform: translateY(200px) translateX(-580px);
   }
+
   .swiper-button-prev {
     transform: translateY(200px) translateX(560px);
   }
+
   .swiper-button-next:after,
   .swiper-button-prev:after {
     font-size: 25px;
   }
+
   .swiper-slide {
     height: 420px;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: start;
+
     button {
       width: 100%;
       margin-top: 20px;
       font-size: 15px;
     }
+
     img {
       width: 70%;
       height: 350px;
@@ -1865,10 +1749,12 @@ img {
       border-bottom-left-radius: 23px;
     }
   }
+
   h2 {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   p {
     font-size: 15px;
     line-height: 30px;
@@ -1877,6 +1763,7 @@ img {
     margin: 0 auto;
     margin-bottom: 70px;
   }
+
   &__card {
     text-align: left;
     position: absolute;
@@ -1888,35 +1775,42 @@ img {
     border: 1px solid #eee;
     padding: 25px;
     width: 280px;
+
     h4 {
       font-weight: 700;
       font-size: 23px;
     }
+
     h6 {
       padding-top: 20px;
       border-top: 1px solid #ccc;
       font-weight: 500;
     }
   }
+
   &__list {
     padding-bottom: 10px;
   }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6px;
+
     h3 {
       font-weight: 700;
       color: #22b3c1;
       font-size: 20px;
     }
   }
+
   &__icon {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+
     span,
     i {
       font-size: 15px;
@@ -1977,6 +1871,7 @@ img {
       border-radius: 50px;
       font-size: 17px;
     }
+
     select {
       border-radius: 50px;
       font-size: 17px;
@@ -2131,12 +2026,14 @@ img {
 .footer {
   padding-top: 70px;
   padding-bottom: 60px;
+
   h2 {
     font-weight: 700;
     font-size: 35px;
     color: #fff;
     margin-bottom: 15px;
   }
+
   h5 {
     font-weight: 500;
     color: #fff;
@@ -2158,32 +2055,39 @@ img {
     .swiper-button-prev {
       transform: translateY(200px) translateX(466px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-500px) !important;
     }
   }
+
   .visa {
     .swiper-button-prev {
       transform: translateY(200px) translateX(466px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-500px) !important;
     }
   }
 }
+
 @media (max-width: 1200px) {
   .offer {
     .swiper-button-prev {
       transform: translateY(200px) translateX(400px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-366px) !important;
     }
   }
+
   .visa {
     .swiper-button-prev {
       transform: translateY(200px) translateX(400px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-366px) !important;
     }
@@ -2200,30 +2104,37 @@ img {
       margin-bottom: 60px;
     }
   }
+
   .contact {
     &__box {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
+
   .offer {
     .swiper-slide {
       width: 46% !important;
     }
+
     .swiper-button-prev {
       transform: translateY(200px) translateX(270px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-276px) !important;
     }
   }
+
   .visa {
     .swiper-slide {
       width: 46% !important;
     }
+
     .swiper-button-prev {
       transform: translateY(200px) translateX(270px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-276px) !important;
     }
@@ -2251,24 +2162,31 @@ img {
 @media (max-width: 770px) {
   .offer {
     padding-bottom: 0;
+
     .swiper-slide {
       width: 100% !important;
     }
+
     .swiper-button-prev {
       transform: translateY(200px) translateX(170px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-190px) !important;
     }
   }
+
   .visa {
     padding-bottom: 0;
+
     .swiper-slide {
       width: 100% !important;
     }
+
     .swiper-button-prev {
       transform: translateY(200px) translateX(170px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-190px) !important;
     }
@@ -2278,6 +2196,7 @@ img {
 @media (max-width: 560px) {
   .reservation {
     padding-top: 80px;
+
     h2 {
       font-size: 30px;
     }
@@ -2346,16 +2265,20 @@ img {
       margin: 0px;
     }
   }
+
   .contact {
     padding-top: 0px !important;
+
     iframe {
       height: 300px;
     }
   }
+
   .footer {
     h2 {
       font-size: 25px;
     }
+
     h5 {
       font-size: 14px;
     }
@@ -2367,14 +2290,17 @@ img {
     .swiper-button-prev {
       transform: translateY(200px) translateX(80px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-90px) !important;
     }
   }
+
   .visa {
     .swiper-button-prev {
       transform: translateY(200px) translateX(80px) !important;
     }
+
     .swiper-button-next {
       transform: translateY(200px) translateX(-90px) !important;
     }

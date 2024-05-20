@@ -1,0 +1,62 @@
+{
+    "home" : "Bosh Sahifa",
+    "about" : "Biz Haqimizda",
+    "tours" : "Turlar",
+    "contacts" : "Kontaktlar",
+    "hero_desc" : "Siz yoqtirib qolishingiz aniq bo'lgan shahar",
+    "hero_title_first" : "Istanbul",
+    "hero_title_second" : "Sharm El-Sheikh",
+    "hero_title_third" : "Dubai",
+    "population" : "Aholi:",
+    "territory" : "Hududi:",
+    "price" : "O'rtacha Narx:",
+    "explore" : "Ko'proq Bilish",
+    "go_there" : "Borishni Xohlaysizmi?",
+
+    "offer_title" : "Eng Yaxshi Haftalik Takliflarimiz", 
+    "offer_desc" : "Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. O'zingizni sarguzashtlar dunyosida his qiling.",
+    "deal": "Tur O'z Ichiga Oladi:",
+    "card1" : {
+        "title" : "Amerika",
+        "person" : "345 buyurtmalar",
+        "car" : " 5 kunlik sayohat > Mehmonxona",
+        "plane" : "Aviabilet",
+        "building" : "Eng yaxshi manzillar"
+    },
+    "card2" : {
+        "title" : "Angliya",
+        "person" : "300  buyurtmalar",
+        "car" : " 5 kunlik sayohat > Mehmonxona",
+        "plane" : "Aviabilet",
+        "building" : "Eng yaxshi manzillar"
+    },
+    "card3" : {
+        "title" : "Kanada",
+        "person" : "200  buyurtmalar",
+        "car" : " 5 kunlik sayohat > Mehmonxona",
+        "plane" : "Aviabilet",
+        "building" : "Eng yaxshi manzillar"
+    },
+    "card4" : {
+        "title" : "Antalya",
+        "person" : "600  buyurtmalar",
+        "car" : " 5 kunlik sayohat > Mehmonxona",
+        "plane" : "Aviabilet",
+        "building" : "Eng yaxshi manzillar"
+    },
+    "card5" : {
+        "title" : "Turkiya",
+        "person" : "200  buyurtmalar",
+        "car" : " 5 kunlik sayohat > Mehmonxona",
+        "plane" : "Aviabilet",
+        "building" : "Eng yaxshi manzillar"
+    },
+    "card6" : {
+        "title" : "Yevropa",
+        "person" : "708  buyurtmalar",
+        "car" : " 5 kunlik sayohat > Mehmonxona",
+        "plane" : "Aviabilet",
+        "building" : "Eng yaxshi manzillar"
+    },
+    "reserve": "Joy Band Qilish"
+}

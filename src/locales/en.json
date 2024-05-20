@@ -1,0 +1,62 @@
+{
+    "home" : "Home",
+    "about" : "About",
+    "tours" : "Tours",
+    "contacts" : "Contacts",
+    "hero_desc" : "Take a Glimpse Into The Beautiful City Of:",
+    "hero_title_first" : "Istanbul",
+    "hero_title_second" : "Sharm El-Sheikh",
+    "hero_title_third" : "Dubai",
+    "population" : "Population:",
+    "territory" : "Territory:",
+    "price" : "AVG Price:",
+    "explore" : "Explore",
+    "go_there" : "Go There",
+
+    "offer_title" : "Best Weekly Offers In Each City", 
+    "offer_desc" : "Discover the best weekly offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "deal": "Deal Includes:",
+    "card1" : {
+        "title" : "USA",
+        "person" : "345 Check Ins",
+        "car" : " 5 Days Trip > Hotel Included",
+        "plane" : "Airplane Bill Included",
+        "building" : "Daily Places Visit"
+    },
+    "card2" : {
+        "title" : "England",
+        "person" : "300 Check Ins",
+        "car" : " 5 Days Trip > Hotel Included",
+        "plane" : "Airplane Bill Included",
+        "building" : "Daily Places Visit"
+    },
+    "card3" : {
+        "title" : "Canada",
+        "person" : "200 Check Ins",
+        "car" : " 5 Days Trip > Hotel Included",
+        "plane" : "Airplane Bill Included",
+        "building" : "Daily Places Visit"
+    },
+    "card4" : {
+        "title" : "Antalya",
+        "person" : "600 Check Ins",
+        "car" : " 5 Days Trip > Hotel Included",
+        "plane" : "Airplane Bill Included",
+        "building" : "Daily Places Visit"
+    },
+    "card5" : {
+        "title" : "Turkey",
+        "person" : "200 Check Ins",
+        "car" : " 5 Days Trip > Hotel Included",
+        "plane" : "Airplane Bill Included",
+        "building" : "Daily Places Visit"
+    },
+    "card6" : {
+        "title" : "Europian Union",
+        "person" : "708 Check Ins",
+        "car" : " 5 Days Trip > Hotel Included",
+        "plane" : "Airplane Bill Included",
+        "building" : "Daily Places Visit"
+    },
+    "reserve": "Make A Reservation"
+}
