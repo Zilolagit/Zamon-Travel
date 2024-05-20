@@ -58,5 +58,118 @@
         "plane" : "Aviabilet",
         "building" : "Eng yaxshi manzillar"
     },
-    "reserve": "Joy Band Qilish"
+    "reserve": "Joy Band Qilish",
+
+    "visa_benefit": "Bizning xizmatlar o'z ichiha oladi",
+    "visa_title" : "Viza Olishga Yordam Beramiz", 
+    "visa_desc" : "Biz sizga oson, tez fursatda va albatta ishonchli viza olishga yordam beramiz.",
+    "visa1" : {
+        "title" : "Xitoy",
+        "person" :"300 Ro'yxatdan o'tganlar",
+        "price" : "Eng arzon narxlar",
+        "time" : "Tezkor ishlash vaqti",
+        "check" : "Ishonchli yordam"
+    },
+    "visa2" : {
+        "title" : "Hong Kong",
+        "person" :"345 Ro'yxatdan o'tganlar",
+        "price" : "Eng arzon narxlar",
+        "time" : "Tezkor ishlash vaqti",
+        "check" : "Ishonchli yordam"
+    },
+    "visa3" : {
+        "title" : "Hindiston",
+        "person" :"230 Ro'yxatdan o'tganlar",
+        "price" : "Eng arzon narxlar",
+        "time" : "Tezkor ishlash vaqti",
+        "check" : "Ishonchli yordam"
+    },
+    "visa4" : {
+        "title" : "Yaponiya",
+        "person" :"780 Ro'yxatdan o'tganlar",
+        "price" : "Eng arzon narxlar",
+        "time" : "Tezkor ishlash vaqti",
+        "check" : "Ishonchli yordam"
+    },
+    "visa5" : {
+        "title" : "Yevropa",
+        "person" :"102 Ro'yxatdan o'tganlar",
+        "price" : "Best Prices",
+        "time" : "Short Processing Time",
+        "check" : "Trustworthy Assistance"
+    },
+    "visa6" : {
+        "title" : "USA",
+        "person" :"90 Ro'yxatdan o'tganlar",
+        "price" : "Eng arzon narxlar",
+        "time" : "Tezkor ishlash vaqti",
+        "check" : "Ishonchli yordam"
+    },
+
+    "explore_more" : "Ko'proq Bilish",
+    "explore_title" : "Chiptalarni Biz Bilan Arzon Va Oson Toping",
+    "explore_desc" : "Har bir shaharda eng yaxshi temir yo‘l va aviachipta biletlarini biz bilan toping",
+    "explore1" : {
+        "title" : "Temir Yo‘l Biletleri Biz Bilan",
+        "small" : "Butun dunyo bo'ylab",
+        "desc" : "Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning."
+    },
+    "explore2" : {
+        "title" : "Aviabiletlar Biz Bilan Arzon",
+        "small" : "Jahon bo‘ylab Manzillar",
+        "desc" : "Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning."
+    },
+
+    "country_title" : "Shaharlardan Biriga Hoziroq Tashrif Buyuring",
+    "country_desc" : "Har bir shahardagi eng yaxshi takliflarimizni kashf eting, faqat siz uchun. O'zingiz uchun yangi dunyosni oching va misli ko'rilmagan sarguzashtlar ega bo'ling.",
+    "country1" : {
+        "title": "Dubai",
+        "country" : "Birlashgan Arab Amirliklari",
+        "desc" : "Dubay - Birlashgan Arab Amirliklaridagi shahar va amirlik, hashamatli xaridlar, ultramodern arxitektura va jonli tungi hayot sahnasi bilan mashhur. Balandligi 830 m bo'lgan Burj Xalifa minorasi osmono'par binolar bilan to'ldirilgan osmon chizig'ida hukmronlik qiladi. Uning etagida musiqaga xoreografiya qilingan samolyotlar va chiroqlar bilan jihozlangan Dubay favvorasi joylashgan. Sun'iy orollarda Atlantis, Palm, suv va dengiz hayvonlari bog'lari joylashgan kurort joylashgan."
+    },
+    "country2" : {
+        "title": "Antalya",
+        "country" : "Turkiya",
+        "desc" : "Antaliya Turkiyaning eng tez rivojlanayotgan shahri bo'lib, butun dunyodan kelgan sayyohlar uning ajoyib plyajlari va an'anaviy turk madaniyatining ajoyib aralashmasini kashf qilmoqdalar. Bolalarga Aqua Land (suvli slaydni yaxshi ko'radiganlar orzusi) va Dolphin Land (delfinlar, dengiz sherlari va oq kitlarning uyi) o'rin olgan Beach Park yoqadi. Eski shahar markazini o'rganing va Hadrian darvozasini ko'ring.        "
+    },
+    "country3" : {
+        "title": "Sharm El-Sheikh",
+        "country" : "Misr",
+        "desc" : "Sharm El Sheikh - Sinay yarim orolidagi sayyohlik markazi bo'lib, unda dunyodagi eng yaxshi sho'ng'in joylari mavjud. Sharm shahrini butunlay boshqa darajaga olib chiqqan Ras Muhammad milliy bog'ining suv osti mo''jizalari. Shaharda Qizil dengiz tubidagi parallel dengiz hayotini kashf qilish uchun dunyoning turli burchaklaridan ilg'or va rekreatsion g'avvoslarni jalb qiladigan sho'ng'in va kema halokat joylari mavjud."
+    },
+    "country4" : {
+        "title": "Istanbul",
+        "country" : "Turkiya",
+        "desc" : "Istanbul Turkiyaning eng gavjum shahri va uning madaniy, iqtisodiy va tarixiy markazidir. U Turkiyaning shimoli-g'arbiy qismida joylashgan bo'lib, Marmara va Qora dengizni bog'laydigan Bosfor bo'g'ozi orqali Yevropa va Osiyo tomoniga bo'linadi. Bu ikki qit'ada joylashgan dunyodagi yagona shahar."
+    },
+    "country_people" : "mln kishi",
+    "country_km" : "km2",
+    "country_link" : "Qiziqarlimi ?",
+
+    "book_desc" : "O'zingiz yoqtirganingizni tanlang",
+    "book_title" : "O'z joyingizni band qiling",
+    "book_dicover" : "Ko'proq Bilish",
+    "book_phone" : "Telefon raqam",
+    "book_email" : "Bizga email orqali bog'laning",
+    "book_office" : "Ofisimizga tashrif buyuring",
+    "book_map" : "15/25, Chilanzar - 9, Tashkent shahar",
+
+    "form_title1" : "O'z",
+    "form_title2" : "Joyingizni",
+    "form_title3" : "Band",
+    "form_title4" : "Qiling",
+    "form" : {
+        "name": "Ismingiz",
+        "number": "Telefon raqamingiz",
+        "guest" : "Necha kishisiz",
+        "date" : "Uchish sanasi",
+        "destination": "Manzilingizni tanlang",
+        "visa" : "Visa turini tanlang",
+        "submit": "Band Qilish"
+    },
+
+    "footer_title" : "SAYOHAT QILISHNI XOHLAYSIZMI?",
+    "footer_desc" : "Unda biz bilan hoziroq bog'laning",
+    "footer_btn" : "Bog'lanish",
+    "footer_copy" : " © 2024 Zamon Business Tour. Barcha huquqlar himoyalangan."
 }

@@ -58,5 +58,118 @@
         "plane" : "Airplane Bill Included",
         "building" : "Daily Places Visit"
     },
-    "reserve": "Make A Reservation"
+    "reserve": "Make A Reservation",
+
+    "visa_benefit": "Benefits of our Visa Support Service:",
+    "visa_title" : "Visa Support", 
+    "visa_desc" : "Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey.",
+    "visa1" : {
+        "title" : "China",
+        "person" :"300 Check Ins",
+        "price" : "Best Prices",
+        "time" : "Short Processing Time",
+        "check" : "Trustworthy Assistance"
+    },
+    "visa2" : {
+        "title" : "Hong Kong",
+        "person" :"345 Check Ins",
+        "price" : "Best Prices",
+        "time" : "Short Processing Time",
+        "check" : "Trustworthy Assistance"
+    },
+    "visa3" : {
+        "title" : "India",
+        "person" :"230 Check Ins",
+        "price" : "Best Prices",
+        "time" : "Short Processing Time",
+        "check" : "Trustworthy Assistance"
+    },
+    "visa4" : {
+        "title" : "Japan",
+        "person" :"780 Check Ins",
+        "price" : "Best Prices",
+        "time" : "Short Processing Time",
+        "check" : "Trustworthy Assistance"
+    },
+    "visa5" : {
+        "title" : "Europe",
+        "person" :"102 Check Ins",
+        "price" : "Best Prices",
+        "time" : "Short Processing Time",
+        "check" : "Trustworthy Assistance"
+    },
+    "visa6" : {
+        "title" : "USA",
+        "person" :"90 Check Ins",
+        "price" : "Best Prices",
+        "time" : "Short Processing Time",
+        "check" : "Trustworthy Assistance"
+    },
+
+    "explore_more" : "Explore More",
+    "explore_title" : "Explore Destinations With Ease",
+    "explore_desc" : "Find the best deals on railway and airplane tickets in each city, carefully selected for you.",
+    "explore1" : {
+        "title" : "Cheap Railway Tickets With Us",
+        "small" : "Whole world",
+        "desc" : "Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network. "
+    },
+    "explore2" : {
+        "title" : "Discover Exciting Air Travel Deals",
+        "small" : "Global Destinations",
+        "desc" : "Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network. "
+    },
+
+    "country_title" : "Visit One Of Our Countries Now",
+    "country_desc" : "Discover the best offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "country1" : {
+        "title": "Dubai",
+        "country" : "United Arab Emirated",
+        "desc" : "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks."
+    },
+    "country2" : {
+        "title": "Antalya",
+        "country" : "Turkey",
+        "desc" : "Antalya is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks."
+    },
+    "country3" : {
+        "title": "Sharm El-Sheikh",
+        "country" : "Egypt",
+        "desc" : "Sharm El Sheikh is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks."
+    },
+    "country4" : {
+        "title": "Istanbul",
+        "country" : "Turkey",
+        "desc" : "Istanbul is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks."
+    },
+    "country_people" : "Mil People",
+    "country_km" : "km2",
+    "country_link" : "Need Directions ?",
+
+    "book_desc" : "Book Prefered Deal Here",
+    "book_title" : "Make Your Reservation",
+    "book_dicover" : "Discover More",
+    "book_phone" : "Make a Phone Call",
+    "book_email" : "Contact Us via Email",
+    "book_office" : "Visit Our Offices",
+    "book_map" : "15/25, Chilanzar - 9, Tashkent city",
+
+    "form_title1" : "Make Your",
+    "form_title2" : "Reservation",
+    "form_title3" : "Through This",
+    "form_title4" : "Form",
+    "form" : {
+        "name": "Your Name",
+        "number": "Your Phone Number",
+        "guest" : "Number Of Guests",
+        "date" : "Check In Date",
+        "destination": "Choose Your Destination",
+        "visa" : "Choose Your Visa Support",
+        "submit": "Make Your Reservation Now"
+    },
+
+    "footer_title" : "ARE YOU LOOKING TO TRAVEL ?",
+    "footer_desc" : "Make A Reservation By Clicking The Button",
+    "footer_btn" : "Book Yours Now",
+    "footer_copy" : "Copyright © 2024 Zamon Business Tour. All rights reserved."
 }

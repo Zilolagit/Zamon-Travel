@@ -441,11 +441,9 @@
   <!-- Visa Start -->
   <section class="visa">
     <div class="container">
-      <h2>Visa Support</h2>
+      <h2>{{ $t('visa_title') }}</h2>
       <p>
-        Experience stress-free travel with our expert visa support. We provide
-        seamless assistance and comprehensive guidance, ensuring a smooth
-        journey.
+        {{ $t('visa_desc') }}
       </p>
       <swiper :slidesPerView="3" :spaceBetween="30" :navigation="true" :modules="modules" :autoplay="{
                 delay: 10,
@@ -455,27 +453,27 @@
           <img src="../public/bg-1.jpg" alt="bg-1" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>USA</h4>
+              <h4>{{ $t('visa1.title') }}</h4>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('visa1.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('visa_benefit') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-tags"></i>
-              <span>Best Prices</span>
+              <span>{{ $t('visa1.price') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-clock"></i>
-              <span>Short Processing Time</span>
+              <span>{{ $t('visa1.time') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-check"></i>
-              <span>Trustworthy Assistance</span>
+              <span>{{ $t('visa1.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -483,27 +481,27 @@
           <img src="../public/bg-2.jpg" alt="bg-2" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>England</h4>
+              <h4>{{ $t('visa2.title') }}</h4>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>205 Check Ins / person</span>
+              <span>{{ $t('visa2.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('visa_benefit') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-tags"></i>
-              <span>Best Prices</span>
+              <span>{{ $t('visa2.price') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-clock"></i>
-              <span>Short Processing Time</span>
+              <span>{{ $t('visa2.time') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-check"></i>
-              <span>Trustworthy Assistance</span>
+              <span>{{ $t('visa2.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -511,27 +509,27 @@
           <img src="../public/bg-3.jpg" alt="bg-3" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>Canada</h4>
+              <h4>{{ $t('visa3.title') }}</h4>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('visa3.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('visa_benefit') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-tags"></i>
-              <span>Best Prices</span>
+              <span>{{ $t('visa3.price') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-clock"></i>
-              <span>Short Processing Time</span>
+              <span>{{ $t('visa3.time') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-check"></i>
-              <span>Trustworthy Assistance</span>
+              <span>{{ $t('visa3.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -539,27 +537,27 @@
           <img src="../public/bg-4.jpg" alt="bg-4" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>USA</h4>
+              <h4>{{ $t('visa4.title') }}</h4>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('visa4.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('visa_benefit') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-tags"></i>
-              <span>Best Prices</span>
+              <span>{{ $t('visa4.price') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-clock"></i>
-              <span>Short Processing Time</span>
+              <span>{{ $t('visa4.time') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-check"></i>
-              <span>Trustworthy Assistance</span>
+              <span>{{ $t('visa4.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -567,27 +565,27 @@
           <img src="../public/bg-5.jpg" alt="bg-5" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>Turkey</h4>
+              <h4>{{ $t('visa5.title') }}</h4>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>200 Check Ins / person</span>
+              <span>{{ $t('visa5.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('visa_benefit') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-tags"></i>
-              <span>Best Prices</span>
+              <span>{{ $t('visa5.price') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-clock"></i>
-              <span>Short Processing Time</span>
+              <span>{{ $t('visa5.time') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-check"></i>
-              <span>Trustworthy Assistance</span>
+              <span>{{ $t('visa5.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -595,27 +593,27 @@
           <img src="../public/bg-6.jpg" alt="bg-6" />
           <div class="offer__card">
             <div class="offer__top">
-              <h4>Europian Union</h4>
+              <h4>{{ $t('visa6.title') }}</h4>
             </div>
             <div class="offer__icon offer__list">
               <i class="fa-solid fa-users"></i>
-              <span>405 Check Ins / person</span>
+              <span>{{ $t('visa6.person') }}</span>
             </div>
-            <h6 class="mb-3 pt-4">Benefits of our Visa Support:</h6>
+            <h6 class="mb-3 pt-4">{{ $t('visa_benefit') }}</h6>
             <div class="offer__icon">
               <i class="fa-solid fa-tags"></i>
-              <span>Best Prices</span>
+              <span>{{ $t('visa6.price') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-clock"></i>
-              <span>Short Processing Time</span>
+              <span>{{ $t('visa6.time') }}</span>
             </div>
             <div class="offer__icon">
               <i class="fa-solid fa-check"></i>
-              <span>Trustworthy Assistance</span>
+              <span>{{ $t('visa6.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">Make A Reservation</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -627,10 +625,9 @@
   <!-- Explore Start -->
   <section id="about" class="explore">
     <div class="container">
-      <h3 class="explore__title">Explore Destinations With Ease</h3>
+      <h3 class="explore__title">{{ $t('explore_title') }}</h3>
       <p class="explore__desc">
-        Find the best deals on railway and airplane tickets in each city,
-        carefully selected for you.
+        {{ $t('explore_desc') }}
       </p>
       <div class="row">
         <div class="col-xl-10">
@@ -645,35 +642,30 @@
                 <div class="row">
                   <div class="col-md-8">
                     <div class="box__title">
-                      <h5>Cheap Railway Tickets With Us</h5>
+                      <h5>{{ $t('explore1.title') }}</h5>
                     </div>
                     <div class="box__desc">
-                      <p>Whole world</p>
+                      <p>{{ $t('explore1.small') }}</p>
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explore More
+                          {{ $t('explore_more') }}
                         </button>
                       </a>
                     </div>
                   </div>
                   <div class="box__info">
                     <p>
-                      Embark on a railway adventure and explore destinations
-                      worldwide. Whether it's the picturesque landscapes,
-                      bustling cities, or cultural gems, our rail services offer
-                      a unique and comfortable way to traverse the globe.
-                      Immerse yourself in the beauty of different cultures, all
-                      accessible through our extensive railway network. .
+                      {{ $t('explore1.desc') }}
                     </p>
                   </div>
                   <div class="box__btn mt-2 mt-sm-3 d-md-none">
                     <a href="#contacts">
                       <button class="button button-opacity">
-                        Explore More
+                        {{ $t('explore_more') }}
                       </button>
                     </a>
                   </div>
@@ -685,42 +677,37 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/plame.jpg" alt="train" />
+                  <img src="../public/plame.jpg" alt="plame" />
                 </div>
               </div>
               <div class="col-lg-8">
                 <div class="row">
                   <div class="col-md-8">
                     <div class="box__title">
-                      <h5>Discover Exciting Air Travel Deals</h5>
+                      <h5>{{ $t('explore2.title') }}</h5>
                     </div>
                     <div class="box__desc">
-                      <p>Global Destinations</p>
+                      <p>{{ $t('explore2.small') }}</p>
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explore More
+                          {{ $t('explore_more') }}
                         </button>
                       </a>
                     </div>
                   </div>
                   <div class="box__info">
                     <p>
-                      Embark on a railway adventure and explore destinations
-                      worldwide. Whether it's the picturesque landscapes,
-                      bustling cities, or cultural gems, our rail services offer
-                      a unique and comfortable way to traverse the globe.
-                      Immerse yourself in the beauty of different cultures, all
-                      accessible through our extensive railway network. .
+                      {{ $t('explore2.desc') }}
                     </p>
                   </div>
                   <div class="box__btn mt-2 mt-sm-3 d-md-none">
                     <a href="#contacts">
                       <button class="button button-opacity">
-                        Explore More
+                        {{ $t('explore_more') }}
                       </button>
                     </a>
                   </div>
@@ -728,6 +715,7 @@
               </div>
             </div>
           </div>
+        
         </div>
       </div>
     </div>
@@ -737,10 +725,9 @@
   <!-- Country Start -->
   <section class="country mt-4 pb-5">
     <div class="container">
-      <h3 class="explore__title">Visit One Of Our Countries Now</h3>
+      <h3 class="explore__title">{{ $t('country_title') }}</h3>
       <p class="explore__desc">
-        Discover the best offers in each city, curated just for you. Immerse
-        yourself in a world of savings and indulge in unparalleled experiences.
+        {{ $t('country_desc') }}
       </p>
       <div class="row">
         <div class="col-xl-10">
@@ -755,40 +742,34 @@
                 <div class="row">
                   <div class="col-md-8">
                     <div class="box__title">
-                      <h5>Dubai</h5>
+                      <h5>{{ $t('country1.title') }}</h5>
                     </div>
                     <div class="box__desc">
-                      <p>United Arab Emirated</p>
+                      <p>{{ $t('country1.country') }}</p>
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explore More
+                          {{ $t('explore_more') }}
                         </button>
                       </a>
                     </div>
                   </div>
                   <div class="box__info">
                     <p>
-                      Dubai is a city and emirate in the United Arab Emirates
-                      known for luxury shopping, ultramodern architecture and a
-                      lively nightlife scene. Burj Khalifa, an 830m-tall tower,
-                      dominates the skyscraper-filled skyline. At its foot lies
-                      Dubai Fountain, with jets and lights choreographed to
-                      music. On artificial islands just offshore is Atlantis,
-                      The Palm, a resort with water and marine-animal parks.
+                      {{ $t('country1.desc') }}
                     </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
                       <i class="fa-solid fa-user"></i>
-                      <span> 8.66 Mil People</span>
+                      <span> 8.66 {{ $t('country_people') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-globe"></i>
-                      <span> 41.290 km2</span>
+                      <span> 41.290 {{ $t('country_km') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-house"></i>
@@ -796,7 +777,7 @@
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#contacts">Need Directions</a>
+                    <a href="#contacts">{{ $t('country_link') }}</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -814,40 +795,34 @@
                 <div class="row">
                   <div class="col-md-8">
                     <div class="box__title">
-                      <h5>Antalya</h5>
+                      <h5>{{ $t('country1.title') }}</h5>
                     </div>
                     <div class="box__desc">
-                      <p>Turkey</p>
+                      <p>{{ $t('country2.country') }}</p>
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explore More
+                          {{ $t('explore_more') }}
                         </button>
                       </a>
                     </div>
                   </div>
                   <div class="box__info">
                     <p>
-                      Antalya is the fastest-growing city in Turkey, and
-                      tourists from around the world are discovering its
-                      fabulous mix of great beaches and traditional Turkish
-                      culture. Kids will love the Beach Park, which features
-                      Aqua Land (a waterslide-fanatic's dream) and Dolphin Land
-                      (home to dolphins, sea lions and white whales). Make sure
-                      to explore the old town center and to see Hadrian's Gate.
+                      {{ $t('country2.desc') }}
                     </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
                       <i class="fa-solid fa-user"></i>
-                      <span> 8.66 Mil People</span>
+                      <span> 8.66 {{ $t('country_people') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-globe"></i>
-                      <span> 41.290 km2</span>
+                      <span> 41.290 {{ $t('country_km') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-house"></i>
@@ -855,7 +830,7 @@
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#contacts">Need Directions</a>
+                    <a href="#contacts">{{ $t('country_link') }}</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -873,48 +848,42 @@
                 <div class="row">
                   <div class="col-md-8">
                     <div class="box__title">
-                      <h5>Sharm El-Sheikh</h5>
+                      <h5>{{ $t('country3.title') }}</h5>
                     </div>
                     <div class="box__desc">
-                      <p>Egypt</p>
+                      <p>{{ $t('country3.country') }}</p>
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explore More
+                          {{ $t('explore_more') }}
                         </button>
                       </a>
                     </div>
                   </div>
                   <div class="box__info">
                     <p>
-                      Sharm El Sheikh is the center of tourism action in Sinai
-                      Peninsula and it has the world top diving sites. Specially
-                      the underwater wonders of Ras Mohammed national park that
-                      took Sharm city to whole different level. The city has
-                      diving and shipwreck sites that attract both advanced and
-                      recreational divers from around the world to discover the
-                      un parallel marine life deep down the red sea.
+                      {{ $t('country3.desc') }}
                     </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
                       <i class="fa-solid fa-user"></i>
-                      <span> 67.41 Mil People</span>
+                      <span> 8.66 {{ $t('country_people') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-globe"></i>
-                      <span> 551.500 km2</span>
+                      <span> 41.290 {{ $t('country_km') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-house"></i>
-                      <span> $425.600</span>
+                      <span> $1.100.200</span>
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#contacts">Need Directions</a>
+                    <a href="#contacts">{{ $t('country_link') }}</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -932,47 +901,42 @@
                 <div class="row">
                   <div class="col-md-8">
                     <div class="box__title">
-                      <h5>Istanbul</h5>
+                      <h5>{{ $t('country4.title') }}</h5>
                     </div>
                     <div class="box__desc">
-                      <p>Turkey</p>
+                      <p>{{ $t('country4.country') }}</p>
                     </div>
                   </div>
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
                         <button class="button button-opacity">
-                          Explore More
+                          {{ $t('explore_more') }}
                         </button>
                       </a>
                     </div>
                   </div>
                   <div class="box__info">
                     <p>
-                      Istanbul is the most populous city in Turkey and its
-                      cultural, economic and historic center. It is located in
-                      north-western part of Turkey, divided into European and
-                      Asian side by Bosphorus, which connects the Sea of Marmara
-                      and Black Sea. It is the only city in the world that sits
-                      on two continents.
+                      {{ $t('country4.desc') }}
                     </p>
                   </div>
                   <ul class="box__list mx-0 mx-sm-3 px-3 px-sm-0">
                     <li>
                       <i class="fa-solid fa-user"></i>
-                      <span> 67.41 Mil People</span>
+                      <span> 8.66 {{ $t('country_people') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-globe"></i>
-                      <span> 551.500 km2</span>
+                      <span> 41.290 {{ $t('country_km') }}</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-house"></i>
-                      <span> $425.600</span>
+                      <span> $1.100.200</span>
                     </li>
                   </ul>
                   <div class="box__link">
-                    <a href="#contacts">Need Directions</a>
+                    <a href="#contacts">{{ $t('country_link') }}</a>
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>
                 </div>
@@ -988,12 +952,12 @@
   <!-- Reservation Start -->
   <section class="reservation">
     <div class="container">
-      <h4>Book Prefered Deal Here</h4>
+      <h4>{{ $t('book_desc') }}</h4>
       <div class="hr"></div>
-      <h2>Make Your Reservation</h2>
+      <h2>{{ $t('book_title') }}</h2>
       <div class="reservation__btn" style="padding-bottom: 30px">
         <a href="#contacts">
-          <button class="button button-white">Discover More</button>
+          <button class="button button-white">{{ $t('book_discover') }}</button>
         </a>
       </div>
       <div class="row reservation__row">
@@ -1002,7 +966,7 @@
             <div class="iconbox__icon">
               <i class="fa-solid fa-phone"></i>
             </div>
-            <h4>Make a Phone Call</h4>
+            <h4>{{ $t('book_phone') }}</h4>
             <a href="tel:+998943939999">+998 99 299 99 96</a>
           </div>
         </div>
@@ -1011,7 +975,7 @@
             <div class="iconbox__icon">
               <i class="fa-solid fa-envelope"></i>
             </div>
-            <h4>Contact Us via Email</h4>
+            <h4>{{ $t('book_email') }}</h4>
             <a href="mailto:zamonbiznestour@mail.ru">zamonbiznestour@mail.ru</a>
           </div>
         </div>
@@ -1020,8 +984,8 @@
             <div class="iconbox__icon">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <h4>Visit Our Offices</h4>
-            <a href="#">15/25, Chilanzar - 9, Tashkent city</a>
+            <h4>{{ $t('book_office') }}</h4>
+            <a href="#">{{ $t('book_map') }}</a>
           </div>
         </div>
       </div>
@@ -1039,23 +1003,22 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="contact__box">
           <h2 class="text-center mb-3">
-            Make Your <span style="color: #22b3c1">Reservation</span> Through
-            This <span style="color: #22b3c1">Form</span>
+            {{ $t('form_title1') }} <span style="color: #22b3c1">{{ $t('form_title2') }}</span> {{ $t('form_title3') }} <span style="color: #22b3c1">{{ $t('form_title4') }}</span>
           </h2>
           <form @submit.prevent="submitForm">
             <div class="row">
               <div class="col-12 col-md-6 mb-4">
-                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                <label for="exampleFormControlInput1" class="form-label">{{ $t('form.name') }}</label>
                 <input type="text" v-model="name" class="form-control form-control-lg" id="exampleFormControlInput1"
                   placeholder="Ex. Johm Smithee" required />
               </div>
               <div class="col-12 col-md-6 mb-4">
-                <label for="exampleFormControlInput2" class="form-label">Your Phone Number</label>
+                <label for="exampleFormControlInput2" class="form-label">{{ $t('form.number') }}</label>
                 <input type="text" v-model="phone_number" class="form-control form-control-lg"
                   id="exampleFormControlInput2" placeholder="Ex. +998 91 456 37 73" required />
               </div>
               <div class="col-12 col-md-6 mt-1 mb-4">
-                <label for="exampleFormControlInput3" class="form-label">Number Of Guests</label>
+                <label for="exampleFormControlInput3" class="form-label">{{ $t('form.guest') }}</label>
                 <select class="form-select" v-model="guests" aria-label="Default select example"
                   id="exampleFormControlInput3" required>
                   <option selected disabled value="">ex. 3 or 4 or 5</option>
@@ -1066,11 +1029,11 @@
                 </select>
               </div>
               <div class="col-12 col-md-6 mt-1 mb-4">
-                <label for="exampleFormControlInput4" class="form-label">Check In Date</label>
+                <label for="exampleFormControlInput4" class="form-label">{{ $t('form.date') }}</label>
                 <input type="date" v-model="date" required class="form-control form-control-lg" />
               </div>
               <div class="col-12 mt-1 mb-4">
-                <label for="exampleFormControlInput5" class="form-label">Choose Your Destination</label>
+                <label for="exampleFormControlInput5" class="form-label">{{ $t('form.destination') }}</label>
                 <select class="form-select form-select-lg" v-model="destination" aria-label="Default select example"
                   id="exampleFormControlInput5" required>
                   <option value="Antalya" selected>Antalya</option>
@@ -1083,7 +1046,7 @@
                 </select>
               </div>
               <div class="col-12 mt-1 mb-4">
-                <label for="exampleFormControlInput6" class="form-label">Choose Your Visa Support</label>
+                <label for="exampleFormControlInput6" class="form-label">{{ $t('form.visa') }}</label>
                 <select class="form-select form-select-lg" v-model="visa" aria-label="Default select example"
                   id="exampleFormControlInput6" required>
                   <option value="" selected disabled>Country</option>
@@ -1099,7 +1062,7 @@
               </div>
               <div class="d-grid mt-3">
                 <button class="button button-opacity">
-                  Make Your Reservation Now
+                  {{ $t('form.submit') }}
                 </button>
               </div>
             </div>
@@ -1115,13 +1078,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8 text-center text-md-start">
-          <h2>ARE YOU LOOKING TO TRAVEL ?</h2>
-          <h5>Make A Reservation By Clicking The Button</h5>
+          <h2>{{ $t('footer_title') }}</h2>
+          <h5>{{ $t('footer_desc') }}</h5>
         </div>
         <div
           class="col-12 col-md-4 mt-4 mt-md-0 d-flex justify-content-center justify-content-md-end align-items-center">
           <a href="#contacts">
-            <button class="button button-border">Book Your Now</button>
+            <button class="button button-border">{{ $t('footer_btn') }}</button>
           </a>
         </div>
       </div>
@@ -1131,7 +1094,7 @@
   <div class="copy" style="padding-top: 25px; padding-bottom: 25px; background-color: #22b3c1">
     <div class="container text-center">
       <p style="padding: 0; margin: 0">
-        Copyright © 2024 Zamon Business Tour. All rights reserved.
+        {{ $t('footer_copy') }}
       </p>
     </div>
   </div>
