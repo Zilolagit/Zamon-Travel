@@ -9,8 +9,10 @@ import uz from "@/locales/uz.json"
 import en from "@/locales/en.json"
 import ru from "@/locales/ru.json"
 
+
+
 const i18n = createI18n({
-    locale: 'en',
+    locale: localStorage.getItem("lang") || 'en',
     fallbackLocale: 'uz',
     messages: {
       en: en,
@@ -19,5 +21,6 @@ const i18n = createI18n({
     }
   })
 
+  
 
 createApp(App).use(i18n).mount('#app')

@@ -22,9 +22,9 @@
         </div>
         <div class="col-lg-3 d-none d-lg-flex justify-content-end" style="gap: 25px">
           <ul class="header__lang">
-            <li><a href="#" @click="$i18n.locale = 'uz'">UZ</a></li>
-            <li><a href="#" @click="$i18n.locale = 'en'">ENG</a></li>
-            <li><a href="#" @click="$i18n.locale = 'ru'">RU</a></li>
+            <li @click="changeLang('uz')"><a href="#" @click="$i18n.locale = 'uz'">UZ</a></li>
+            <li @click="changeLang('en')"><a href="#" @click="$i18n.locale = 'en'">ENG</a></li>
+            <li @click="changeLang('ru')"><a href="#" @click="$i18n.locale = 'ru'">RU</a></li>
           </ul>
           <ul class="header__social">
             <li>
@@ -1147,6 +1147,10 @@ async function submitForm() {
       theme: "colored",
     });
   }
+}
+
+function changeLang(lang) {
+  localStorage.setItem("lang", lang)
 }
 
 </script>
