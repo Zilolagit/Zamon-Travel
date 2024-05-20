@@ -171,5 +171,26 @@
     "footer_title" : "SAYOHAT QILISHNI XOHLAYSIZMI?",
     "footer_desc" : "Unda biz bilan hoziroq bog'laning",
     "footer_btn" : "Bog'lanish",
-    "footer_copy" : " © 2024 Zamon Business Tour. Barcha huquqlar himoyalangan."
+    "footer_copy" : " © 2024 Zamon Business Tour. Barcha huquqlar himoyalangan.",
+
+    "location_title": "Eng Yaxshi Manzillar",
+    "location_desc": "DHar bir shahardagi eng yaxshi takliflarimizni kashf eting, faqat siz uchun. O'zingiz uchun yangi dunyosni oching va misli ko'rilmagan sarguzashtlar ega bo'ling.",
+    "location" : {
+        "card1" : {
+            "title" : "Dubay"
+        },
+        "card2" : {
+            "title" : "Antalya"
+        },
+        "card3" : {
+            "title" : "Istanbul"
+        },
+        "card4" : {
+            "title" : "Sharm El-Sheikh"
+        },
+        "card5" : {
+            "title" : "Paris"
+        }
+    },
+    "people" : "Aholisi:"
 }

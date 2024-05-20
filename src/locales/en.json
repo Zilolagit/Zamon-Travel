@@ -171,5 +171,26 @@
     "footer_title" : "ARE YOU LOOKING TO TRAVEL ?",
     "footer_desc" : "Make A Reservation By Clicking The Button",
     "footer_btn" : "Book Yours Now",
-    "footer_copy" : "Copyright © 2024 Zamon Business Tour. All rights reserved."
+    "footer_copy" : "Copyright © 2024 Zamon Business Tour. All rights reserved.",
+
+    "location_title": "Best Locations",
+    "location_desc": "Discover the best offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "location" : {
+        "card1" : {
+            "title" : "Dubai"
+        },
+        "card2" : {
+            "title" : "Antalya"
+        },
+        "card3" : {
+            "title" : "Istanbul"
+        },
+        "card4" : {
+            "title" : "Sharm El-Sheikh"
+        },
+        "card5" : {
+            "title" : "Paris"
+        }
+    },
+    "people" : "Population"
 }

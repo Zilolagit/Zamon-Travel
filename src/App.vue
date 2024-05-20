@@ -949,6 +949,66 @@
   </section>
   <!-- Country End -->
 
+  <!-- Best Start -->
+  <section class="best">
+    <div class="container">
+      <div class="text-center">
+        <h3 class="best__title">{{ $t('location_title') }}</h3>
+      <p class="best__desc" style="margin: 0px auto;">
+        {{ $t('location_desc') }}
+      </p>
+      </div>
+      <div class="best__flex">
+        <div class="best__item" @click="activeItem = 'first'" :class="{'best__item-active' : activeItem == 'first'}" style="background-image: url(../public/1.jpg); background-size: cover;">
+          <div class="best__box">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+          <div class="best__text">
+            <h5>{{ $t('location.card1.title') }}</h5>
+            <p>{{ $t('people') }}: 3M</p>
+          </div>
+        </div>
+        <div class="best__item" @click="activeItem = 'second'" :class="{'best__item-active' : activeItem == 'second'}" style="background-image: url(../public/istan.jpg); background-size: cover;">
+          <div class="best__box">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+          <div class="best__text">
+            <h5>{{ $t('location.card2.title') }}</h5>
+            <p>{{ $t('people') }}: 3M</p>
+          </div>
+        </div>
+        <div class="best__item" @click="activeItem = 'third'" :class="{'best__item-active' : activeItem == 'third'}" style="background-image: url(../public/3.jpg); background-size: cover;">
+          <div class="best__box">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+          <div class="best__text">
+            <h5>{{ $t('location.card3.title') }}</h5>
+            <p>{{ $t('people') }}: 3M</p>
+          </div>
+        </div>
+        <div class="best__item d-none d-md-block" @click="activeItem = 'fourth'" :class="{'best__item-active' : activeItem == 'fourth'}" style="background-image: url(../public/dubay.jpg); background-size: cover;">
+          <div class="best__box">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+          <div class="best__text">
+            <h5>{{ $t('location.card4.title') }}</h5>
+            <p>{{ $t('people') }}: 3M</p>
+          </div>
+        </div>
+        <div class="best__item d-none d-md-block" @click="activeItem = 'fifth'" :class="{'best__item-active' : activeItem == 'fifth'}" style="background-image: url(../public/5.jpg); background-size: cover;">
+          <div class="best__box">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+          <div class="best__text">
+            <h5>{{ $t('location.card5.title') }}</h5>
+            <p>{{ $t('people') }}: 3M</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Best End -->
+
   <!-- Reservation Start -->
   <section class="reservation">
     <div class="container">
@@ -1116,6 +1176,8 @@ const destination = ref("Antalya");
 const visa = ref("");
 const token = ref("7069003625:AAGAQJns8zC96OqRSQIwC8Ewj1efbWCnIW0");
 const chat_id = ref("237282713");
+
+const activeItem = ref("first")
 
 function openMenu() {
   document.querySelector(".header__bars").classList.toggle("header__rotate");
@@ -1805,6 +1867,84 @@ img {
   }
 }
 
+/* Best Styles */
+.best {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  &__flex {
+    max-width: 800px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 380px;
+  }
+  &__item {
+    transition: all .3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    width: 8%;
+    position: relative;
+    &-active {
+      width: 70%;
+    }
+  }
+  &__box {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    i {
+      color: #22b3c1;
+    }
+  }
+  &__text {
+    width: 300px;
+    position: absolute;
+    left: 65px;
+    bottom: 10px;
+    * {
+      color: #fff;
+    }
+
+    h5 {
+      font-weight: 600;
+      margin-bottom: 3px;
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__desc {
+    color: #afafaf;
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 30px;
+  }
+}
+
 /* Contact Styles */
 .contact {
   &__map {
@@ -2158,6 +2298,17 @@ img {
       transform: translateY(200px) translateX(-190px) !important;
     }
   }
+  .best {
+    &__flex {
+      max-width: 100%;
+    }
+    &__item {
+      width: 12%;
+      &-active {
+        width: calc(100% - 24%);
+      }
+    }
+  }
 }
 
 @media (max-width: 560px) {
@@ -2272,5 +2423,15 @@ img {
       transform: translateY(200px) translateX(-90px) !important;
     }
   }
+
+  .best {
+    &__item {
+      width: 20%;
+      &-active {
+        width: calc(100% - 40%);
+      }
+    }
+  }
+
 }
 </style>
