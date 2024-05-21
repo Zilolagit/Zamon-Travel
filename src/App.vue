@@ -1,12 +1,12 @@
 <template>
   <!-- Header Start -->
-  <header class="header">
+  <header class="header" >
     <div class="container">
       <div class="row">
         <div class="col-6 col-lg-3 d-flex align-items-center">
           <div class="header__logo">
             <a href="/">
-              <img src="../public/logo.svg" alt="logo" />
+              <img src="/logo.svg" alt="logo" />
             </a>
           </div>
         </div>
@@ -22,9 +22,9 @@
         </div>
         <div class="col-lg-3 d-none d-lg-flex justify-content-end" style="gap: 25px">
           <ul class="header__lang">
-            <li @click="changeLang('uz')"><a href="#" @click="$i18n.locale = 'uz'">UZ</a></li>
-            <li @click="changeLang('en')"><a href="#" @click="$i18n.locale = 'en'">ENG</a></li>
-            <li @click="changeLang('ru')"><a href="#" @click="$i18n.locale = 'ru'">RU</a></li>
+            <li @click="changeLang('uz', 'lan-header')"><a href="#" @click="$i18n.locale = 'uz'">UZ</a></li>
+            <li @click="changeLang('en', 'lan-header')"><a href="#" @click="$i18n.locale = 'en'">ENG</a></li>
+            <li @click="changeLang('ru', 'lan-header')"><a href="#" @click="$i18n.locale = 'ru'">RU</a></li>
           </ul>
           <ul class="header__social">
             <li>
@@ -45,13 +45,13 @@
       </div>
       <div class="header__mobile" v-if="isOpen">
         <ul class="header__menu">
-          <li><a href="/">{{ $t('home') }}</a></li>
-          <li><a href="#about">{{ $t('about') }}</a></li>
-          <li><a href="#tours">{{ $t('tours') }}</a></li>
-          <li><a href="#contacts">{{ $t('contacts') }}</a></li>
-          <li><a href="#">UZ</a></li>
-          <li><a href="#">ENG</a></li>
-          <li><a href="#">RU</a></li>
+          <li><a @click="openMenu" href="/">{{ $t('home') }}</a></li>
+          <li><a @click="openMenu" href="#about">{{ $t('about') }}</a></li>
+          <li><a @click="openMenu" href="#tours">{{ $t('tours') }}</a></li>
+          <li><a @click="openMenu" href="#contacts">{{ $t('contacts') }}</a></li>
+          <li @click="changeLang('uz', 'lan-menu')"><a href="#"  @click="$i18n.locale = 'uz'">UZ</a></li>
+          <li @click="changeLang('en', 'lan-menu')"><a href="#" @click="$i18n.locale = 'en'">ENG</a></li>
+          <li @click="changeLang('ru', 'lan-menu')"><a href="#" @click="$i18n.locale = 'ru'">RU</a></li>
           <li>
             <a href="#"><i class="fa-brands fa-telegram"></i> </a>
           </li>
@@ -65,7 +65,7 @@
   <!-- Header End -->
 
   <!-- Hero Start -->
-  <section class="hero">
+  <section class="hero" >
     <div class="container-fluid" style="padding-left: 0; padding-right: 0">
       <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade">
         <div class="carousel-indicators">
@@ -87,7 +87,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" style="
-              background-image: url(../public/istanbul1.jpg);
+              background-image: url(/istanbul1.jpg);
             " data-bs-interval="1000">
             <div>
               <div class="container text-center">
@@ -139,7 +139,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000" style="
-              background-image: url(../public/sharm.jpg);
+              background-image: url(/sharm.jpg);
             ">
             <div>
               <div class="container text-center">
@@ -191,7 +191,7 @@
             </div>
           </div>
           <div class="carousel-item text-center" style="
-              background-image: url(../public/dubay1.jpg);
+              background-image: url(/dubay1.jpg);
             ">
             <div>
               <div class="container text-center">
@@ -255,12 +255,12 @@
       <p>
         {{ $t('offer_desc') }}
       </p>
-      <swiper :slidesPerView="3" :spaceBetween="30" :navigation="true" :modules="modules" :autoplay="{
+      <swiper :loop="true" :slidesPerView="3" :spaceBetween="30" :navigation="true" :modules="modules" :autoplay="{
                 delay: 10,
                 disableOnInteraction: false,
               }" class="mySwiper">
         <swiper-slide>
-          <img src="../public/bg-1.jpg" alt="bg-1" />
+          <img src="/bg-1.jpg" alt="bg-1" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('card1.title') }}</h4>
@@ -289,7 +289,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-2.jpg" alt="bg-2" />
+          <img src="/bg-2.jpg" alt="bg-2" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('card2.title') }}</h4>
@@ -318,7 +318,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-3.jpg" alt="bg-3" />
+          <img src="/bg-3.jpg" alt="bg-3" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('card3.title') }}</h4>
@@ -347,7 +347,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-4.jpg" alt="bg-4" />
+          <img src="/bg-4.jpg" alt="bg-4" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('card4.title') }}</h4>
@@ -376,7 +376,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-5.jpg" alt="bg-5" />
+          <img src="/bg-5.jpg" alt="bg-5" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('card5.title') }}</h4>
@@ -405,7 +405,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-6.jpg" alt="bg-6" />
+          <img src="/bg-6.jpg" alt="bg-6" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('card6.title') }}</h4>
@@ -429,7 +429,7 @@
               <span>{{ $t('card6.building') }} </span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">{{ $t('reserve') }}</button>
+              <button class="button  ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -445,12 +445,12 @@
       <p>
         {{ $t('visa_desc') }}
       </p>
-      <swiper :slidesPerView="3" :spaceBetween="30" :navigation="true" :modules="modules" :autoplay="{
+      <swiper :slidesPerView="3" :loop="true" :spaceBetween="30" :navigation="true" :modules="modules" :autoplay="{
                 delay: 10,
                 disableOnInteraction: false,
               }" class="mySwiper">
         <swiper-slide>
-          <img src="../public/bg-1.jpg" alt="bg-1" />
+          <img src="/bg-1.jpg" alt="bg-1" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('visa1.title') }}</h4>
@@ -473,12 +473,12 @@
               <span>{{ $t('visa1.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">{{ $t('reserve') }}</button>
+              <button class="button ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-2.jpg" alt="bg-2" />
+          <img src="/bg-2.jpg" alt="bg-2" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('visa2.title') }}</h4>
@@ -501,12 +501,12 @@
               <span>{{ $t('visa2.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">{{ $t('reserve') }}</button>
+              <button class="button ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-3.jpg" alt="bg-3" />
+          <img src="/bg-3.jpg" alt="bg-3" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('visa3.title') }}</h4>
@@ -529,12 +529,12 @@
               <span>{{ $t('visa3.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">{{ $t('reserve') }}</button>
+              <button class="button  ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-4.jpg" alt="bg-4" />
+          <img src="/bg-4.jpg" alt="bg-4" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('visa4.title') }}</h4>
@@ -557,12 +557,12 @@
               <span>{{ $t('visa4.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">{{ $t('reserve') }}</button>
+              <button class="button  ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-5.jpg" alt="bg-5" />
+          <img src="/bg-5.jpg" alt="bg-5" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('visa5.title') }}</h4>
@@ -585,12 +585,12 @@
               <span>{{ $t('visa5.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">{{ $t('reserve') }}</button>
+              <button class="button  ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <img src="../public/bg-6.jpg" alt="bg-6" />
+          <img src="/bg-6.jpg" alt="bg-6" />
           <div class="offer__card">
             <div class="offer__top">
               <h4>{{ $t('visa6.title') }}</h4>
@@ -613,7 +613,7 @@
               <span>{{ $t('visa6.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button button-opacity">{{ $t('reserve') }}</button>
+              <button class="button  ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -635,7 +635,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/train.jpg" alt="train" />
+                  <img src="/train.jpg" alt="train" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -664,7 +664,7 @@
                   </div>
                   <div class="box__btn mt-2 mt-sm-3 d-md-none">
                     <a href="#contacts">
-                      <button class="button button-opacity">
+                      <button class="button  ">
                         {{ $t('explore_more') }}
                       </button>
                     </a>
@@ -677,7 +677,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/plame.jpg" alt="plame" />
+                  <img src="/plame.jpg" alt="plame" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -693,7 +693,7 @@
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
-                        <button class="button button-opacity">
+                        <button class="button  button-opacity">
                           {{ $t('explore_more') }}
                         </button>
                       </a>
@@ -706,7 +706,7 @@
                   </div>
                   <div class="box__btn mt-2 mt-sm-3 d-md-none">
                     <a href="#contacts">
-                      <button class="button button-opacity">
+                      <button class="button  ">
                         {{ $t('explore_more') }}
                       </button>
                     </a>
@@ -735,7 +735,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/dubay.jpg" alt="train" />
+                  <img src="/dubay.jpg" alt="train" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -751,7 +751,7 @@
                   <div class="col-md-4 d-none d-md-flex justify-content-end">
                     <div class="box__btn">
                       <a href="#contacts">
-                        <button class="button button-opacity">
+                        <button class="button  button-opacity">
                           {{ $t('explore_more') }}
                         </button>
                       </a>
@@ -788,7 +788,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/antalya.jpg" alt="antalya" />
+                  <img src="/antalya.jpg" alt="antalya" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -841,7 +841,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/egypt.jpg" alt="egypt" />
+                  <img src="/egypt.jpg" alt="egypt" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -894,7 +894,7 @@
             <div class="row">
               <div class="col-lg-4 mb-4 mb-lg-0">
                 <div class="box__image">
-                  <img src="../public/istanbul.jpg" alt="istanbul" />
+                  <img src="/istanbul.jpg" alt="istanbul" />
                 </div>
               </div>
               <div class="col-lg-8">
@@ -959,49 +959,50 @@
       </p>
       </div>
       <div class="best__flex">
-        <div class="best__item" @click="activeItem = 'first'" :class="{'best__item-active' : activeItem == 'first'}" style="background-image: url(../public/1.jpg); background-size: cover;">
+        <div class="best__item" @click="activeItem = 'first'" :class="{'best__item-active' : activeItem == 'first'}" style="background-image: url(/1.jpg); background-size: cover;">
           <div class="best__box">
             <i class="fa-solid fa-expand"></i>
           </div>
           <div class="best__text">
             <h5>{{ $t('location.card1.title') }}</h5>
-            <p>{{ $t('people') }}: 3M</p>
+            <p>{{ $t('people') }} 3M</p>
           </div>
         </div>
-        <div class="best__item" @click="activeItem = 'second'" :class="{'best__item-active' : activeItem == 'second'}" style="background-image: url(../public/istan.jpg); background-size: cover;">
+        <div class="best__item" @click="activeItem = 'second'" :class="{'best__item-active' : activeItem == 'second'}" style="background-image: url(/istan.jpg); background-size: cover;">
           <div class="best__box">
             <i class="fa-solid fa-expand"></i>
           </div>
           <div class="best__text">
             <h5>{{ $t('location.card2.title') }}</h5>
-            <p>{{ $t('people') }}: 3M</p>
+            <p>{{ $t('people') }} 3M</p>
           </div>
         </div>
-        <div class="best__item" @click="activeItem = 'third'" :class="{'best__item-active' : activeItem == 'third'}" style="background-image: url(../public/3.jpg); background-size: cover;">
+        <div class="best__item" @click="activeItem = 'third'" :class="{'best__item-active' : activeItem == 'third'}" style="background-image: url(/3.jpg); background-size: cover;">
           <div class="best__box">
             <i class="fa-solid fa-expand"></i>
           </div>
           <div class="best__text">
             <h5>{{ $t('location.card3.title') }}</h5>
-            <p>{{ $t('people') }}: 3M</p>
+
+            <p>{{ $t('people') }} 3M</p>
           </div>
         </div>
-        <div class="best__item d-none d-md-block" @click="activeItem = 'fourth'" :class="{'best__item-active' : activeItem == 'fourth'}" style="background-image: url(../public/dubay.jpg); background-size: cover;">
+        <div class="best__item d-none d-md-block" @click="activeItem = 'fourth'" :class="{'best__item-active' : activeItem == 'fourth'}" style="background-image: url(/dubay.jpg); background-size: cover;">
           <div class="best__box">
             <i class="fa-solid fa-expand"></i>
           </div>
           <div class="best__text">
             <h5>{{ $t('location.card4.title') }}</h5>
-            <p>{{ $t('people') }}: 3M</p>
+            <p>{{ $t('people') }} 3M</p>
           </div>
         </div>
-        <div class="best__item d-none d-md-block" @click="activeItem = 'fifth'" :class="{'best__item-active' : activeItem == 'fifth'}" style="background-image: url(../public/5.jpg); background-size: cover;">
+        <div class="best__item d-none d-md-block" @click="activeItem = 'fifth'" :class="{'best__item-active' : activeItem == 'fifth'}" style="background-image: url(/5.jpg); background-size: cover;">
           <div class="best__box">
             <i class="fa-solid fa-expand"></i>
           </div>
           <div class="best__text">
             <h5>{{ $t('location.card5.title') }}</h5>
-            <p>{{ $t('people') }}: 3M</p>
+            <p>{{ $t('people') }} 3M</p>
           </div>
         </div>
       </div>
@@ -1063,7 +1064,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="contact__box">
           <h2 class="text-center mb-3">
-            {{ $t('form_title1') }} <span style="color: #22b3c1">{{ $t('form_title2') }}</span> {{ $t('form_title3') }} <span style="color: #22b3c1">{{ $t('form_title4') }}</span>
+            {{ $t('form_title1') }} <span style="color: #129be5">{{ $t('form_title2') }}</span> {{ $t('form_title3') }} <span style="color: #129be5">{{ $t('form_title4') }}</span>
           </h2>
           <form @submit.prevent="submitForm">
             <div class="row">
@@ -1090,7 +1091,7 @@
               </div>
               <div class="col-12 col-md-6 mt-1 mb-4">
                 <label for="exampleFormControlInput4" class="form-label">{{ $t('form.date') }}</label>
-                <input type="date" v-model="date" required class="form-control form-control-lg" />
+                <input type="date" v-model="date" id="exampleFormControlInput4" required class="form-control form-control-lg" />
               </div>
               <div class="col-12 mt-1 mb-4">
                 <label for="exampleFormControlInput5" class="form-label">{{ $t('form.destination') }}</label>
@@ -1134,7 +1135,7 @@
   <!-- Contact End -->
 
   <!-- Footer Start -->
-  <footer class="footer" style="background-image: url(../public/footerBg.jpg)">
+  <footer class="footer" style="background-image: url(/footer.jpg)">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8 text-center text-md-start">
@@ -1151,7 +1152,7 @@
     </div>
   </footer>
 
-  <div class="copy" style="padding-top: 25px; padding-bottom: 25px; background-color: #22b3c1">
+  <div class="copy" style="padding-top: 25px; padding-bottom: 25px; background-color: #129be5">
     <div class="container text-center">
       <p style="padding: 0; margin: 0">
         {{ $t('footer_copy') }}
@@ -1211,8 +1212,11 @@ async function submitForm() {
   }
 }
 
-function changeLang(lang) {
+function changeLang(lang, menu) {
   localStorage.setItem("lang", lang)
+  if (menu == 'lan-menu') {
+    openMenu()
+  }
 }
 
 </script>
@@ -1231,7 +1235,7 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  setup() {
+  data() {
     return {
       modules: [Navigation],
     };
@@ -1271,34 +1275,36 @@ img {
 }
 
 .button {
-  background-color: #22b3c1;
+  background-color: #129be5;
   color: #fff;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 50px;
   padding: 12px 35px;
   font-weight: 500;
   transition: all 0.3s ease;
 
+
   &:hover {
-    color: #22b3c1 !important;
+    color: #129be5 !important;
     background-color: #fff !important;
   }
 }
 
 .button-opacity {
   &:hover {
-    background-color: #22b4c1ca !important;
-    color: #fff !important;
+    background-color: transparent;
+    border-color: #129be5;
+    color: #129be5 !important;
   }
 }
 
 .button-white {
   background-color: #fff;
-  color: #22b3c1;
+  color: #129be5;
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #22b3c1 !important;
+    background-color: #129be5 !important;
     color: #fff !important;
   }
 }
@@ -1309,7 +1315,7 @@ img {
 
 /* Header Styles */
 .header {
-  background-color: #22b3c1;
+  background-color: #129be5;
   padding-top: 15px;
   padding-bottom: 15px;
   position: absolute;
@@ -1459,7 +1465,7 @@ img {
 
       &:first-child {
         a {
-          color: #22b3c1;
+          color: #129be5;
         }
       }
     }
@@ -1486,7 +1492,7 @@ img {
     }
 
     h4 {
-      color: #22b3c1 !important;
+      color: #129be5 !important;
       font-size: 21px;
       font-weight: 700;
     }
@@ -1496,14 +1502,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #22b3c1;
+    border: 1px solid #129be5;
     border-radius: 50px;
     width: 60px;
     height: 60px;
 
     i {
       font-size: 24px;
-      color: #22b3c1 !important;
+      color: #129be5 !important;
     }
   }
 
@@ -1600,12 +1606,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #22b3c1;
-    color: #22b3c1;
+    border: 1px solid #129be5;
+    color: #129be5;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #22b3c1;
+      background-color: #129be5;
       color: #fff;
     }
   }
@@ -1696,7 +1702,7 @@ img {
 
     h3 {
       font-weight: 700;
-      color: #22b3c1;
+      color: #129be5;
       font-size: 20px;
     }
   }
@@ -1733,12 +1739,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #22b3c1;
-    color: #22b3c1;
+    border: 1px solid #129be5;
+    color: #129be5;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #22b3c1;
+      background-color: #129be5;
       color: #fff;
     }
   }
@@ -1829,7 +1835,7 @@ img {
 
     h3 {
       font-weight: 700;
-      color: #22b3c1;
+      color: #129be5;
       font-size: 20px;
     }
   }
@@ -1910,7 +1916,7 @@ img {
     bottom: 12px;
     left: 12px;
     i {
-      color: #22b3c1;
+      color: #129be5;
     }
   }
   &__text {
@@ -2041,12 +2047,12 @@ img {
 
     a {
       font-weight: 500;
-      color: #22b3c1;
+      color: #129be5;
       transition: all 0.3s ease;
     }
 
     i {
-      color: #22b3c1;
+      color: #129be5;
       transition: all 0.3s ease;
     }
 
@@ -2059,7 +2065,7 @@ img {
 /* Reservation Styles */
 .reservation {
   padding-top: 250px;
-  background-image: url(../public/reservation.jpg);
+  background-image: url(/reservation.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2112,7 +2118,7 @@ img {
 
     i {
       font-size: 20px;
-      color: #22b3c1;
+      color: #129be5;
     }
   }
 
@@ -2124,7 +2130,7 @@ img {
   }
 
   a {
-    color: #22b3c1;
+    color: #129be5;
   }
 }
 
@@ -2133,6 +2139,24 @@ img {
 .footer {
   padding-top: 70px;
   padding-bottom: 60px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  * {
+    z-index: 5;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #129be5;
+    opacity: 0.6;
+    z-index: 2;
+  }
 
   h2 {
     font-weight: 700;
