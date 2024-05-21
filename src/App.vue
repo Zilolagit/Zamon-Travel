@@ -473,7 +473,7 @@
               <span>{{ $t('visa1.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button ">{{ $t('reserve') }}</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -501,7 +501,7 @@
               <span>{{ $t('visa2.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button ">{{ $t('reserve') }}</button>
+              <button class="button button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -529,7 +529,7 @@
               <span>{{ $t('visa3.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button  ">{{ $t('reserve') }}</button>
+              <button class="button  button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -557,7 +557,7 @@
               <span>{{ $t('visa4.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button  ">{{ $t('reserve') }}</button>
+              <button class="button button-opacity ">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -585,7 +585,7 @@
               <span>{{ $t('visa5.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button  ">{{ $t('reserve') }}</button>
+              <button class="button  button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
@@ -613,7 +613,7 @@
               <span>{{ $t('visa6.check') }}</span>
             </div>
             <a href="#contacts">
-              <button class="button  ">{{ $t('reserve') }}</button>
+              <button class="button  button-opacity">{{ $t('reserve') }}</button>
             </a>
           </div>
         </swiper-slide>
